@@ -1,6 +1,6 @@
-# Client
+# Contributing
 
-**UNDER CONSTRUCTION** 
+Please follow our [Styleguide](https://github.com/panelinhadees/git-style-guide) before opening a PR.
 
 ## Setup
 

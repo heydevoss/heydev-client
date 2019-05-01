@@ -1,0 +1,15 @@
+anguage: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+
+install:
+  - npm install
+
+jobs:
+  include:
+    - stage: tests
+      name: "Lint"
+      script: npm run lint
