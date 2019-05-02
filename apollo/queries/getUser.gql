@@ -1,0 +1,8 @@
+#example
+query GetUsers {
+    users {
+        id
+        userName
+        email
+    }
+}
