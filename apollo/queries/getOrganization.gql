@@ -1,0 +1,8 @@
+query { 
+  organization(login: "OpenDevUFCG") {
+    name
+    avatarUrl
+    url
+    websiteUrl
+  }
+}
