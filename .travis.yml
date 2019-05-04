@@ -10,6 +10,9 @@ install:
 
 jobs:
   include:
-    - stage: tests
+    - stage: lint
       name: "Lint"
       script: npm run lint
+    - stage: test
+      name: "Test"
+      script: npm run test
