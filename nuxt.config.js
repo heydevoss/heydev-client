@@ -1,5 +1,4 @@
 import pkg from './package'
-
 export default {
   mode: 'universal',
 
@@ -34,8 +33,17 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/apollo'],
 
+  apollo: {
+    tokenExpires: 7, // optional, default: 7 (days)
+    includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
+    authenticationType: 'Basic', // optional, default: 'Bearer'
+    // required
+    clientConfigs: {
+      default: '../apollo/clientConfig.js'
+    }
+  },
   /*
    ** Build configuration
    */
@@ -50,7 +58,10 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
     }
