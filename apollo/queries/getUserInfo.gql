@@ -1,0 +1,7 @@
+{
+  me {
+    login
+    id
+    totalRepos
+  }
+}

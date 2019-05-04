@@ -1,34 +1,28 @@
 <template>
-  <section class="container">
+  <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        client
+      <h1 class="title-app">
+        NeoLite
       </h1>
-      <h2 class="subtitle">
-        client
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
+      <LoginButton v-if="!isAuthenticated" />
+      <LogoutButton v-else />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import LoginButton from '@/components/commons/LoginButton'
+import LogoutButton from '@/components/commons/LogoutButton'
 
 export default {
   components: {
-    Logo
+    LoginButton,
+    LogoutButton
+  },
+  computed: {
+    isAuthenticated() {
+      return !!this.$apolloHelpers.getToken()
+    }
   }
 }
 </script>
@@ -41,27 +35,17 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
 }
 
-.title {
+.title-app {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #233141;
   letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
