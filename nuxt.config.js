@@ -1,5 +1,4 @@
 import pkg from './package'
-
 export default {
   mode: 'universal',
 
@@ -40,10 +39,6 @@ export default {
     tokenExpires: 7, // optional, default: 7 (days)
     includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
     authenticationType: 'Basic', // optional, default: 'Bearer'
-    // optional
-    errorHandler (error) {
-      console.log('%cError', 'background:red; color:white; padding:2px 4px; border-radius:3px; font-weight:bold;', error.message)
-    },
     // required
     clientConfigs: {
       default: '../apollo/clientConfig.js'
@@ -64,9 +59,9 @@ export default {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
-          options : {
-            fix : true
-        }
+          options: {
+            fix: true
+          }
         })
       }
     }
