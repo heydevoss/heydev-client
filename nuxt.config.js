@@ -42,15 +42,13 @@ export default {
     authenticationType: 'Basic', // optional, default: 'Bearer'
     // optional
     errorHandler (error) {
-      console.log('%cError', 'background: red; color: white; padding: 2px 4px; border-radius: 3px; font-weight: bold;', error.message)
+      console.log('%cError', 'background:red; color:white; padding:2px 4px; border-radius:3px; font-weight:bold;', error.message)
     },
     // required
     clientConfigs: {
-      default: '~/apollo/clientConfig.js'
+      default: '../apollo/clientConfig.js'
     }
-},
-
-
+  },
   /*
    ** Build configuration
    */
