@@ -20,3 +20,11 @@ npm run dev
 If everything worked correctly, access http://localhost:3000/ on your browser.
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## Run with docker
+
+```
+cd client/
+docker build . -t panelinhadees/client
+docker run panelinhadees/client
+``` 
