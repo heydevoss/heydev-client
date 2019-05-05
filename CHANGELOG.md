@@ -8,12 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # Added
 
+- Get organizations infos
+- Implemented organization page
 - Implemented login and logout.
 - Connected with server using localhost 5000.
 - Configured apollo client.
 - Nuxt project structure and configured Travis.
-- Implemented organization page
-- Get organizations infos
 
 # Fixed
 

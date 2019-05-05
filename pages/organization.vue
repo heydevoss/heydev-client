@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="organizationInfo">
       <Avatar :avatar-url="organization.avatarUrl" />
       <h1>{{ organization.name }}</h1>
       <h2>
@@ -55,5 +55,10 @@ export default {
 
 a {
   text-decoration: none;
+}
+
+.organizationInfo {
+  display: grid;
+  grid-gap: 20px 20px;
 }
 </style>
