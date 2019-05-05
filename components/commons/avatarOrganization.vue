@@ -1,6 +1,6 @@
 <template>
   <div class="circle">
-    <img src="example.png">
+    <img src="example.png" />
   </div>
 </template>
 
@@ -10,18 +10,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .circle {
-    background-color: #aaa;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: relative;
-  }
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
 
-  .circle img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 </style>
