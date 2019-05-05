@@ -1,22 +1,35 @@
 <template>
   <div class="container">
     <div>
-      <!-- Avatar/ -->
-      <h1>NeoLite</h1>
-      <h2><a href="#">Site</a></h2>
-      <GitHubButton />
+      <Avatar :avatarUrl="organization.avatarUrl"/>
+      <h1>{{organization.name}}</h1>
+      <h2> <a v-if="organization.websiteUrl != null" v-bind:href="''+organization.websiteUrl+''"> Site </a></h2>
+      <GitHubButton :url="organization.url" />
     </div>
   </div>
 </template>
 
 <script>
 import GitHubButton from '@/components/organization/GitHubButton'
-// import Avatar from '@/components/commons/Avatar'
+import getOrganization from '@/apollo/queries/getOrganization.gql'
+ import Avatar from '@/components/commons/Avatar'
 
 export default {
   components: {
-    GitHubButton
-    // Avatar
+    GitHubButton,
+    Avatar
+  },
+  
+  data() {
+    return {
+      organization: {}
+    }
+  },
+
+  apollo: {
+    organization: {
+      query: getOrganization
+    }
   }
 }
 </script>
