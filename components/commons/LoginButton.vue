@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="http://localhost:5000/auth/login" class="button--grey">Login</a>
+    <a href="http://localhost:5000/auth/login" class="button--green">Login</a>
   </div>
 </template>
 

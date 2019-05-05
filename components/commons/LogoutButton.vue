@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="button--grey" @click="onLogout">Logout</button>
+    <button class="button--green" @click="onLogout">Logout</button>
   </div>
 </template>
 
@@ -15,4 +15,3 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped></style>
