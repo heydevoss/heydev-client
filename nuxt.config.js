@@ -38,7 +38,6 @@ export default {
   apollo: {
     tokenExpires: 7, // optional, default: 7 (days)
     includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
-    authenticationType: '',
     // required
     clientConfigs: {
       default: '../apollo/clientConfig.js'

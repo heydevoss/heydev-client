@@ -16,3 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # Fixed
 
 - Reload page when Logout is clicked.
+
+# Changed
+
+- Authentication type to default *Bearer*.
+- Package name to *NeoLite*.
+- Button designs.
+- Result profile page to show `Hey <login_of_the_user>`.
