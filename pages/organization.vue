@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <!-- AvatarOrganization/ -->
+      <!-- Avatar/ -->
       <h1>NeoLite</h1>
       <h2><a href="#">Site</a></h2>
       <GitHubButton />
@@ -11,12 +11,12 @@
 
 <script>
 import GitHubButton from '@/components/organization/GitHubButton'
-// import AvatarOrganization from '@/components/commons/AvatarOrganization'
+// import Avatar from '@/components/commons/Avatar'
 
 export default {
   components: {
     GitHubButton
-    // AvatarOrganization
+    // Avatar
   }
 }
 </script>

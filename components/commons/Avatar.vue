@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'AvatarOrganization'
+  name: 'Avatar'
 }
 </script>
 <style lang="scss" scoped>
