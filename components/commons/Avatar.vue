@@ -1,22 +1,22 @@
 <template>
-  <div class="circle">
-    <img src="example.png" />
+  <div>
+    <img :src="avatarUrl" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Avatar'
+  name: 'Avatar',
+  props: ['avatarUrl']
 }
 </script>
 <style lang="scss" scoped>
-.circle {
-  background-color: #aaa;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  position: relative;
+img {
+  background-color: #ddd;
+  border-radius: 100%;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
 }
 
 .circle img {
