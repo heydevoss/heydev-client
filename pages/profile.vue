@@ -9,7 +9,11 @@
         <div v-else-if="error" class="error apollo">An error occured</div>
 
         <!-- Result -->
-        <div v-else-if="data" class="result apollo">{{ data }}</div>
+        <div v-else-if="data" class="result">
+          <h1>
+            Hey {{ data.me.login }} :)
+          </h1>
+        </div>
 
         <!-- No result -->
         <div v-else class="no-result apollo">No result :(</div>
@@ -17,8 +21,20 @@
     </ApolloQuery>
   </div>
 </template>
+
 <script>
 export default {
   middleware: ['authenticated']
 }
 </script>
+
+<style lang="scss" scoped>
+.result {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  min-height: 80vh;
+  justify-content: center;
+}
+</style>
+

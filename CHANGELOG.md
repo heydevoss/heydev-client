@@ -19,4 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # Changed
 
-- Change authentication type to default *Bearer*.
+- Authentication type to default *Bearer*.
+- Package name to *NeoLite*.
+- Button designs.
+- Result profile page to show `Hey <login_of_the_user>`.
