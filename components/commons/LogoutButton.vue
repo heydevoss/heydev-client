@@ -10,6 +10,7 @@ export default {
   methods: {
     async onLogout() {
       await this.$apolloHelpers.onLogout()
+      window.location.reload()
     }
   }
 }
