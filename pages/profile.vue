@@ -10,9 +10,7 @@
 
         <!-- Result -->
         <div v-else-if="data" class="result">
-          <h1>
-            Hey {{ data.me.login }} :)
-          </h1>
+          <h1>Hey {{ data.me.login }} :)</h1>
         </div>
 
         <!-- No result -->
@@ -37,4 +35,3 @@ export default {
   justify-content: center;
 }
 </style>
-
