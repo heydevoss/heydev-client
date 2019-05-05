@@ -16,3 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # Fixed
 
 - Reload page when Logout is clicked.
+
+# Changed
+
+- Change authentication type to default *Bearer*.
