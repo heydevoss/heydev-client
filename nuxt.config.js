@@ -38,7 +38,7 @@ export default {
   apollo: {
     tokenExpires: 7, // optional, default: 7 (days)
     includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
-    authenticationType: 'Basic', // optional, default: 'Bearer'
+    authenticationType: '',
     // required
     clientConfigs: {
       default: '../apollo/clientConfig.js'
@@ -51,19 +51,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-          options: {
-            fix: true
-          }
-        })
-      }
-    }
+    extend(config, ctx) {}
   }
 }
