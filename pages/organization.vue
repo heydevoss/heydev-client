@@ -1,9 +1,16 @@
 <template>
   <div class="container">
     <div>
-      <Avatar :avatarUrl="organization.avatarUrl"/>
-      <h1>{{organization.name}}</h1>
-      <h2> <a v-if="organization.websiteUrl != null" v-bind:href="''+organization.websiteUrl+''"> Site </a></h2>
+      <Avatar :avatar-url="organization.avatarUrl" />
+      <h1>{{ organization.name }}</h1>
+      <h2>
+        <a
+          v-if="organization.websiteUrl != null"
+          :href="'' + organization.websiteUrl + ''"
+        >
+          Site
+        </a>
+      </h2>
       <GitHubButton :url="organization.url" />
     </div>
   </div>
@@ -12,14 +19,14 @@
 <script>
 import GitHubButton from '@/components/organization/GitHubButton'
 import getOrganization from '@/apollo/queries/getOrganization.gql'
- import Avatar from '@/components/commons/Avatar'
+import Avatar from '@/components/commons/Avatar'
 
 export default {
   components: {
     GitHubButton,
     Avatar
   },
-  
+
   data() {
     return {
       organization: {}

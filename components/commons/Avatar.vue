@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <img :src="avatarUrl" />
   </div>
 </template>
@@ -11,13 +11,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
-img{
+img {
   background-color: #ddd;
   border-radius: 100%;
   height: 200px;
   object-fit: cover;
-  width: 200px;  
+  width: 200px;
 }
 
 .circle img {
