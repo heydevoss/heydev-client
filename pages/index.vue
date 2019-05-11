@@ -15,6 +15,7 @@ import LoginButton from '@/components/commons/LoginButton'
 import LogoutButton from '@/components/commons/LogoutButton'
 
 export default {
+  name: 'Index',
   components: {
     LoginButton,
     LogoutButton
