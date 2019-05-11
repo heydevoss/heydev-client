@@ -1,6 +1,3 @@
-//testar se nome aparece
-//se botao de login aparece
-//se botao de logout aparece
 import { shallowMount } from '@vue/test-utils'
 import { mount } from '@vue/test-utils'
 import Index from '@/pages/index.vue'
