@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils'
 import { mount } from '@vue/test-utils'
+
 import Index from '@/pages/index.vue'
 import LoginButton from '@/components/commons/LoginButton.vue'
 import LogoutButton from '@/components/commons/LogoutButton.vue'
@@ -34,10 +34,6 @@ describe('Index', () => {
     wrapper.find(LoginButton).trigger('click')
     wrapper.vm.$nextTick(() => {
       expect(wrapper.contains(LoginButton)).toBe(false)
-      done()
     })
   })
-
-
 })
-
