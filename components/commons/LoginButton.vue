@@ -9,7 +9,6 @@ export default {
   name: 'LoginButton',
   methods: {
     login() {
-      console.log('oi')
       this.$router.replace('/auth/login')
     }
   }
