@@ -6,9 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2017-05-06
+### Added
 
-# Added
+- ElementUI plugin.
+- Default Roboto font.
+- Setted primary Color to #2a5fe1.
+
+## [0.1.0] - 2019-05-06
+
+### Added
 
 - Get organizations infos
 - Implemented organization page
@@ -17,11 +23,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Configured apollo client.
 - Nuxt project structure and configured Travis.
 
-# Fixed
+### Fixed
 
 - Reload page when Logout is clicked.
 
-# Changed
+### Changed
 
 - Authentication type to default *Bearer*.
 - Package name to *NeoLite*.
