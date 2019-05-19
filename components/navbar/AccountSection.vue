@@ -1,7 +1,7 @@
 <template>
   <div>
-    <LoginButton v-if="!isAuthenticated"/>
-    <LogoutButton v-else/>
+    <LoginButton v-if="!isAuthenticated" />
+    <LogoutButton v-else />
   </div>
 </template>
 <script>

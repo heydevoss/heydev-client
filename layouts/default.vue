@@ -12,7 +12,7 @@
         <i class="el-icon-s-home"></i>
         <span class="menu-icon">Home</span>
       </el-menu-item>
-      <account-section class="navbar--account-section"/>
+      <account-section class="navbar--account-section" />
     </el-menu>
     <nuxt />
   </div>
@@ -64,11 +64,10 @@ html {
 .navbar {
   display: flex;
   align-items: center;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
 .navbar--account-section {
   margin-left: auto;
 }
-
 </style>
