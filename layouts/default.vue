@@ -2,7 +2,7 @@
   <div>
     <el-menu
       :default-active="activeIndex"
-      class="el-menu-demo"
+      class="navbar"
       mode="horizontal"
       background-color="#2EC4B6"
       text-color="#fff"
@@ -12,12 +12,18 @@
         <i class="el-icon-s-home"></i>
         <span class="menu-icon">Home</span>
       </el-menu-item>
+      <account-section class="navbar--account-section"/>
     </el-menu>
     <nuxt />
   </div>
 </template>
 <script>
+import AccountSection from '@/components/navbar/AccountSection'
+
 export default {
+  components: {
+    AccountSection
+  },
   data() {
     return {
       activeIndex: '1'
@@ -55,35 +61,14 @@ html {
   font-size: 20px;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: white;
-  background-color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-  font-size: 20px;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-right:10px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #34a087;
-  cursor: pointer;
+.navbar--account-section {
+  margin-left: auto;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
