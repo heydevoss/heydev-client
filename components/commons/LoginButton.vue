@@ -9,7 +9,7 @@ export default {
   name: 'LoginButton',
   methods: {
     login() {
-      this.$router.replace('/auth/login')
+      window.location = 'http://localhost:5000/auth/login'
     }
   }
 }
