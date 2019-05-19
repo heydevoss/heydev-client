@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="button--green" @click="onLogout">Logout</button>
+    <el-button type="primary" plain @click="onLogout">Logout</el-button>
   </div>
 </template>
 

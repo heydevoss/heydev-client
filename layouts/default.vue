@@ -1,8 +1,41 @@
 <template>
   <div>
+    <el-menu
+      :default-active="activeIndex"
+      class="navbar"
+      mode="horizontal"
+      background-color="#2EC4B6"
+      text-color="#fff"
+      @select="handleSelect"
+    >
+      <el-menu-item index="1">
+        <i class="el-icon-s-home"></i>
+        <span class="menu-icon">Home</span>
+      </el-menu-item>
+      <account-section class="navbar--account-section" />
+    </el-menu>
     <nuxt />
   </div>
 </template>
+<script>
+import AccountSection from '@/components/navbar/AccountSection'
+
+export default {
+  components: {
+    AccountSection
+  },
+  data() {
+    return {
+      activeIndex: '1'
+    }
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      if (key === '1') this.$router.replace('/')
+    }
+  }
+}
+</script>
 
 <style>
 html {
@@ -24,35 +57,17 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: white;
-  background-color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.menu-icon {
   font-size: 20px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #34a087;
-  cursor: pointer;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.navbar--account-section {
+  margin-left: auto;
 }
 </style>
