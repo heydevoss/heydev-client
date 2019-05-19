@@ -4,16 +4,16 @@
       :default-active="activeIndex"
       class="el-menu-demo"
       mode="horizontal"
-      @select="handleSelect"
       background-color="#2EC4B6"
       text-color="#fff"
+      @select="handleSelect"
     >
       <el-menu-item index="1">
         <i class="el-icon-s-home"></i>
         <span class="menu-icon">Home</span>
       </el-menu-item>
     </el-menu>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 <script>
@@ -25,13 +25,11 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      if(key === "1")
-        this.$router.replace('/')
+      if (key === '1') this.$router.replace('/')
     }
   }
 }
 </script>
-
 
 <style>
 html {
