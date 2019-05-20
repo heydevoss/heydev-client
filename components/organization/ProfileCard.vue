@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div id="app">
       <el-row>
         <el-col>
           <el-card class="card" :body-style="{ padding: '0px' }">
@@ -19,7 +18,7 @@
               </div>
             </div>
             <footer class="box-footer">
-              <table style="width:100%">
+              <table>
                 <tr>
                   <td>5</td>
                   <td>10</td>
@@ -35,7 +34,6 @@
           </el-card>
         </el-col>
       </el-row>
-    </div>
   </div>
 </template>
 
@@ -64,7 +62,6 @@ table {
   height: 350px;
   background-color: #47525e;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .description {
