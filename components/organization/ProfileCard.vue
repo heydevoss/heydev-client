@@ -1,39 +1,39 @@
 <template>
   <div>
-      <el-row>
-        <el-col>
-          <el-card class="card" :body-style="{ padding: '0px' }">
-            <br /><img
-              src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-              class="image"
-            />
-            <div style="padding: 0px;">
-              <span>mateusoliveira2</span>
+    <el-row>
+      <el-col>
+        <el-card class="card" :body-style="{ padding: '0px' }">
+          <br /><img
+            src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+            class="image"
+          />
+          <div style="padding: 0px;">
+            <span>mateusoliveira2</span>
 
-              <div class="description">
-                <br /><span
-                  >aqui vai ter a descrição do user e tudo mais que der né</span
-                ><br />
-                <br />
-              </div>
+            <div class="description">
+              <br /><span
+                >aqui vai ter a descrição do user e tudo mais que der né</span
+              ><br />
+              <br />
             </div>
-            <footer class="box-footer">
-              <table>
-                <tr>
-                  <td>5</td>
-                  <td>10</td>
-                  <td>7</td>
-                </tr>
-                <tr>
-                  <td>Issues</td>
-                  <td>Pull Requests</td>
-                  <td>Commit</td>
-                </tr>
-              </table>
-            </footer>
-          </el-card>
-        </el-col>
-      </el-row>
+          </div>
+          <footer class="box-footer">
+            <table>
+              <tr>
+                <td>5</td>
+                <td>10</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Issues</td>
+                <td>Pull Requests</td>
+                <td>Commit</td>
+              </tr>
+            </table>
+          </footer>
+        </el-card>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
