@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <img :src="avatarUrl" />
-  </div>
+  <img :src="avatarUrl || require('~/assets/avatar/default.png')" />
 </template>
 
 <script>
 export default {
   name: 'Avatar',
-  props: ['avatarUrl']
+  props: {
+    avatarUrl: String
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -17,11 +17,5 @@ img {
   height: 200px;
   object-fit: cover;
   width: 200px;
-}
-
-.circle img {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 </style>
