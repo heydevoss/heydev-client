@@ -8,8 +8,6 @@ describe('ProfileCard', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-
-
   it('renders the table ', () => {
     expect(wrapper.html()).toContain('<table>')
   })
