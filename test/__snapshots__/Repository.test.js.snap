@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Repository renders correctly 1`] = `
+exports[`<Repository/> Component renders correctly 1`] = `
 <div
   class="box-backdrop"
 >
@@ -36,17 +36,15 @@ exports[`Repository renders correctly 1`] = `
     >
       <img
         height="20px"
-        src="..\\\\..\\\\static\\\\fork.png"
+        src="/fork.png"
         width="20px"
       />
        5
         
       <pre />
        
-      <img
-        height="18px"
-        src="..\\\\..\\\\static\\\\star.png"
-        width="18px"
+      <i
+        class="el-icon-star-on"
       />
        10
       
