@@ -28,7 +28,7 @@
         <slot name="footer">
           <img width="20px" height="20px" src="/fork.png" /> 5
           <pre></pre>
-          <img width="18px" height="18px" src="..\..\static\star.png" /> 10
+          <i class="el-icon-star-on"/> 10
         </slot>
       </footer>
     </div>
