@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserStats/> Component renders correctly 1`] = `
+<div
+  class="content"
+>
+  <div
+    class="stat"
+  >
+    <span
+      class="count"
+    >
+      
+      2
+    
+    </span>
+     
+    <span
+      class="label"
+    >
+      
+      Pull Requests
+    
+    </span>
+  </div>
+  <div
+    class="stat"
+  >
+    <span
+      class="count"
+    >
+      
+      20
+    
+    </span>
+     
+    <span
+      class="label"
+    >
+      
+      Issues
+    
+    </span>
+  </div>
+  <div
+    class="stat"
+  >
+    <span
+      class="count"
+    >
+      
+      10
+    
+    </span>
+     
+    <span
+      class="label"
+    >
+      
+      Commits
+    
+    </span>
+  </div>
+</div>
+`;
