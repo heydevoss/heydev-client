@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import Repository from '@/components/organization/Repository.vue'
 
-describe('Repository', () => {
+describe('<Repository/> Component', () => {
   const wrapper = mount(Repository)
 
   test('is a Vue instance', () => {
