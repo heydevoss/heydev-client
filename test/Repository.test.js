@@ -20,11 +20,11 @@ describe('Repository', () => {
     expect(wrapper.html()).toContain('<img')
   })
 
-  test('have the labels info (fork)', () => {
+  test('have the img info (fork)', () => {
     expect(wrapper.html().includes('fork')).toBe(true)
   })
 
-  test('have the labels info (stars)', () => {
+  test('have the img info (stars)', () => {
     expect(wrapper.html().includes('star')).toBe(true)
   })
 })
