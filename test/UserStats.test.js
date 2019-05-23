@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import UserStats from '@/components/user/UserStats'
 
 describe('<UserStats/> Component', () => {
-  const wrapper = mount(UserStats)
+  const wrapper = shallowMount(UserStats)
 
   it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
