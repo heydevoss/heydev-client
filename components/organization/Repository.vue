@@ -26,7 +26,7 @@
 
       <footer class="box-footer">
         <slot name="footer">
-          <img width="20px" height="20px" src="..\..\static\fork.png" /> 5
+          <img width="20px" height="20px" src="/fork.png" /> 5
           <pre></pre>
           <img width="18px" height="18px" src="..\..\static\star.png" /> 10
         </slot>
