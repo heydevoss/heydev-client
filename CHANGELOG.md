@@ -10,8 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - ElementUI plugin.
 - Default Roboto font.
-- Setted primary Color to #2a5fe1.
+- Setted primary Color to `#2a5fe1`.
 - Header containing `Home` option.
+- User page containing User info and user stats.
+
+### Fixed
+
+- Avatar throws error when image is not provided. Setted a default image in `assets/`
 
 ## [0.1.0] - 2019-05-06
 
