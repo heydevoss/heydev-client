@@ -1,31 +1,28 @@
 <template>
   <div class="content">
-    <div v-for="(stat, index) in stats" class="stat">
+    <div v-for="stat in stats" :key="stat.label" class="stat">
       <span class="count">
-        {{stat.count}}
+        {{ stat.count }}
       </span>
       <span class="label">
-        {{stat.label}}
+        {{ stat.label }}
       </span>
     </div>
   </div>
 </template>
 <script>
-
 export default {
   name: 'UserStats',
-  components: {
-  },
+  components: {},
   data() {
     return {
       stats: [
-        {label: 'Pull Requests', count: 2},
-        {label: 'Issues', count: 20},
-        {label: 'Commits', count: 10}
+        { label: 'Pull Requests', count: 2 },
+        { label: 'Issues', count: 20 },
+        { label: 'Commits', count: 10 }
       ]
     }
   }
-    
 }
 </script>
 <style lang="scss" scoped>
@@ -34,7 +31,6 @@ export default {
   justify-content: space-evenly;
 }
 .label {
-  
 }
 .count {
   color: orange;

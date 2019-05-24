@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <avatar class="user--avatar"/>
+    <avatar class="user--avatar" />
     <div class="user--info">
       <span class="user--name">MyName</span>
       <span>A little about me...</span>
       <span class="user--location">
-        <i class="el-icon-location"/> Location, LO.
+        <i class="el-icon-location" /> Location, LO.
       </span>
     </div>
   </div>
@@ -18,7 +18,6 @@ export default {
   components: {
     Avatar
   }
-    
 }
 </script>
 <style lang="scss" scoped>
@@ -50,5 +49,4 @@ export default {
     height: 60px;
   }
 }
-
 </style>

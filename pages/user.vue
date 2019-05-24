@@ -1,9 +1,9 @@
 <template>
   <div class="content">
     <div class="header">
-      <user-info class="user-info"/>
-      <el-divider direction="vertical" class="divider"/>
-      <user-stats class="user-stats"/>
+      <user-info class="user-info" />
+      <el-divider direction="vertical" class="divider" />
+      <user-stats class="user-stats" />
     </div>
   </div>
 </template>
@@ -18,7 +18,6 @@ export default {
     UserStats
   }
 }
-
 </script>
 
 <style lang="scss" scoped>
@@ -46,5 +45,4 @@ export default {
     height: 0em;
   }
 }
-
 </style>
