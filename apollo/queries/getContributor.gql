@@ -1,0 +1,20 @@
+query { 
+  organization{
+    contributor(login: $login){
+      id
+      login
+      name
+      location
+      bio
+      email
+      websiteUrl
+      avatarUrl
+      firstContributionDate
+      totalCommits
+      totalIssuesOpen
+      totalIssuesClosed
+      totalPullRequestsOpen
+      totalPullRequestsClosed
+    }
+  }
+}

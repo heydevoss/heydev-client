@@ -3,6 +3,7 @@
     <div class="header">
       <user-info class="user-info" />
       <el-divider direction="vertical" class="divider" />
+      {{this.$route.params.login}}
       <user-stats class="user-stats" />
     </div>
   </div>
