@@ -29,11 +29,4 @@ describe('Index', () => {
   test('Logout button not appear when is not logged', () => {
     expect(wrapper.contains(LogoutButton)).toBe(false)
   })
-
-  test('Login button not appear when is logged', () => {
-    wrapper.find(LoginButton).trigger('click')
-    wrapper.vm.$nextTick(() => {
-      expect(wrapper.contains(LoginButton)).toBe(false)
-    })
-  })
 })

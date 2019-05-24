@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Repository/> Component renders correctly 1`] = `
+<div
+  class="box-backdrop"
+>
+  <div
+    class="box"
+  >
+    <header
+      class="box-header"
+    >
+      
+        Client
+      
+    </header>
+     
+    <section
+      class="box-description"
+    >
+      
+        UNDER CONSTR Uddd fffdd ddddd dddd d dd ddC T ION
+      
+    </section>
+     
+    <section
+      class="box-languages"
+    >
+      
+        Javascript | Vue | HTML
+      
+    </section>
+     
+    <footer
+      class="box-footer"
+    >
+      <img
+        height="20px"
+        src="/fork.png"
+        width="20px"
+      />
+       5
+        
+      <pre />
+       
+      <i
+        class="el-icon-star-on"
+      />
+       10
+      
+    </footer>
+  </div>
+</div>
+`;
