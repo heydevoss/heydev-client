@@ -12,7 +12,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 img {
-  background-color: #ddd;
   border-radius: 100%;
   height: 200px;
   object-fit: cover;

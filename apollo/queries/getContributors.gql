@@ -1,0 +1,11 @@
+query { 
+  organization {
+    contributors(first: $quantity) {
+      login
+      name
+      avatarUrl
+      bio
+      websiteUrl
+    }
+  }
+}

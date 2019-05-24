@@ -1,0 +1,12 @@
+query { 
+  organization {
+    repositories(maxNumberOfRepositories: $quantity) {
+      id
+      name
+      totalOpenIssues
+      totalOpenPullRequests
+      totalStars
+      totalForks
+    }
+  }
+}

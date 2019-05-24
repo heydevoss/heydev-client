@@ -1,29 +1,59 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title-app">
-        NeoLite
-      </h1>
-      <LoginButton v-if="!isAuthenticated" />
-      <LogoutButton v-else />
+    <div class="organizationInfo">
+      <Avatar :avatar-url="organization.avatarUrl" />
+      <h1>{{ organizationInfo.name }}</h1>
+      <h2>
+        <a
+          v-if="organizationInfo.websiteUrl != null"
+          :href="'' + organizationInfo.websiteUrl + ''"
+        >
+          Site
+        </a>
+      </h2>
+      <GitHubButton :url="organizationInfo.url" />
     </div>
   </div>
 </template>
 
 <script>
-import LoginButton from '@/components/commons/LoginButton'
-import LogoutButton from '@/components/commons/LogoutButton'
+import GitHubButton from '@/components/organization/GitHubButton'
+import getOrganization from '@/apollo/queries/getOrganization.gql'
+import getRepositories from '@/apollo/queries/getRepositories.gql'
+import getContributors from '@/apollo/queries/getRepositories.gql'
+
+import Avatar from '@/components/commons/Avatar'
 
 export default {
-  name: 'Index',
+  name: 'Organization',
   components: {
-    LoginButton,
-    LogoutButton
+    GitHubButton,
+    Avatar
   },
-  computed: {
-    isAuthenticated() {
-      return !!this.$apolloHelpers.getToken()
+
+  data() {
+    return {
+      organizationInfo: {}
     }
+  },
+
+  apollo: {
+    organizationInfo: {
+      query: getOrganization
+    },
+    repositories: {
+      query: getRepositories,
+      variables: {
+        quantity: 10
+      }
+    },
+    contributors: {
+      query: getContributors,
+      variables: {
+        quantity: 10
+      }
+    }
+
   }
 }
 </script>
@@ -36,16 +66,14 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
-  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
-.title-app {
-  font-family: 'Roboto Mono', monospace;
-  display: block;
-  font-weight: 100;
-  font-size: 10rem;
-  color: #233141;
-  letter-spacing: 0.5rem;
+a {
+  text-decoration: none;
+}
+
+.organizationInfo {
+  display: grid;
+  grid-gap: 20px 20px;
 }
 </style>
