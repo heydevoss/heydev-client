@@ -1,5 +1,5 @@
 query { 
-  organization(login: "panelinhadees") {
+  organization {
     name
     avatarUrl
     url

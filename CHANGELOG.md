@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Avatar throws error when image is not provided. Setted a default image in `assets/`
+- Organization query with wrong sintax.
 
 ## [0.1.0] - 2019-05-06
 
