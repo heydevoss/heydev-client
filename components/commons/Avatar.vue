@@ -13,8 +13,8 @@ export default {
 <style lang="scss" scoped>
 img {
   border-radius: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
-  width: 200px;
+  width: 300px;
 }
 </style>

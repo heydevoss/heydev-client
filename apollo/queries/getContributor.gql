@@ -1,0 +1,9 @@
+query getContributors($login: String!){ 
+  organization {
+    contributor(login: $login) {
+      login
+      name
+      bio
+    }
+  }
+}

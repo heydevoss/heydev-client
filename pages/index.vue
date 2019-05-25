@@ -1,79 +1,93 @@
 <template>
   <div class="container">
-    <div class="organizationInfo">
-      <Avatar :avatar-url="organization.avatarUrl" />
-      <h1>{{ organizationInfo.name }}</h1>
-      <h2>
-        <a
-          v-if="organizationInfo.websiteUrl != null"
-          :href="'' + organizationInfo.websiteUrl + ''"
-        >
-          Site
-        </a>
-      </h2>
-      <GitHubButton :url="organizationInfo.url" />
+    <div class="info">
+      <Avatar :avatar-url="organization.avatarUrl" class="org--avatar" />
+      <div>
+        <span class="org--name">{{ organization.name }}</span>
+        <img
+          width="30px"
+          heigth="30px"
+          :src="require('@/assets/githubIcon.svg')"
+        />
+      </div>
     </div>
+    <section class="contributors">
+      <span class="section--title">Contributors</span>
+      <contributorsList />
+    </section>
+    <section class="repositories">
+      <span class="section--title">Repositories</span>
+      <repositoriesList />
+    </section>
   </div>
 </template>
 
 <script>
-import GitHubButton from '@/components/organization/GitHubButton'
+import ContributorsList from '@/components/organization/ContributorsList'
+import RepositoriesList from '@/components/organization/RepositoriesList'
 import getOrganization from '@/apollo/queries/getOrganization.gql'
-import getRepositories from '@/apollo/queries/getRepositories.gql'
-import getContributors from '@/apollo/queries/getRepositories.gql'
 
 import Avatar from '@/components/commons/Avatar'
 
 export default {
   name: 'Organization',
   components: {
-    GitHubButton,
-    Avatar
+    Avatar,
+    ContributorsList,
+    RepositoriesList
   },
 
   data() {
     return {
-      organizationInfo: {}
+      organization: {}
     }
   },
 
   apollo: {
-    organizationInfo: {
+    organization: {
       query: getOrganization
-    },
-    repositories: {
-      query: getRepositories,
-      variables: {
-        quantity: 10
-      }
-    },
-    contributors: {
-      query: getContributors,
-      variables: {
-        quantity: 10
-      }
     }
-
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
-  margin: 0 auto;
   min-height: 100vh;
+  max-width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
+  margin: 5% 20%;
+  color: #47525e;
 }
 
-a {
-  text-decoration: none;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
 }
 
-.organizationInfo {
-  display: grid;
-  grid-gap: 20px 20px;
+.section--title {
+  font-size: calc(1.5em + 1vw);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.org--name {
+  font-size: calc(3em + 1vw);
+}
+section {
+  margin-top: 40px;
+}
+@media screen and (max-width: 820px) {
+  .container {
+    margin: 0;
+  }
+  section {
+    margin-top: 10px;
+  }
 }
 </style>

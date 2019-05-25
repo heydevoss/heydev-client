@@ -1,4 +1,4 @@
-query { 
+query contributors($quantity: Int!){ 
   organization {
     contributors(first: $quantity) {
       login
@@ -6,6 +6,9 @@ query {
       avatarUrl
       bio
       websiteUrl
+      totalIssues
+      totalCommits
+      totalPullRequests
     }
   }
 }

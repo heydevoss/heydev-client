@@ -1,4 +1,4 @@
-query { 
+query repositories($quantity: Int!) { 
   organization {
     repositories(maxNumberOfRepositories: $quantity) {
       id
