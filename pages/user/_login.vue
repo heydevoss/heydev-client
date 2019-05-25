@@ -20,7 +20,10 @@
       />
     </div>
 
-    <contribution-chart> </contribution-chart>
+    <contribution-chart 
+        :total-pull-requests="this.organization.contributor.totalPullRequests"
+        :total-commits="this.organization.contributor.totalCommits"
+        :total-issues="this.organization.contributor.totalIssues"> </contribution-chart>
   </div>
 </template>
 <script>
