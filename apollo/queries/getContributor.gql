@@ -1,4 +1,4 @@
-query { 
+query  getContributor($login: String!){ 
   organization{
     contributor(login: $login){
       id
