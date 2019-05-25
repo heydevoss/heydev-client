@@ -1,11 +1,11 @@
 <template>
   <div class="content">
     <div v-for="stat in stats" :key="stat.label" class="stat">
-      <span class="count">
-        {{ stat.count }}
-      </span>
       <span class="label">
         {{ stat.label }}
+      </span>
+      <span class="count">
+        {{ stat.count }}
       </span>
     </div>
   </div>
@@ -14,12 +14,19 @@
 export default {
   name: 'UserStats',
   components: {},
+  props: {
+    totalPullRequests: Number,
+    totalCommits: Number,
+    totalIssues: Number,
+    firstContributionDate: String
+  },
   data() {
     return {
       stats: [
-        { label: 'Pull Requests', count: 2 },
-        { label: 'Issues', count: 20 },
-        { label: 'Commits', count: 10 }
+        { label: 'Pull Requests', count: this.totalPullRequests },
+        { label: 'Issues', count: this.totalCommits },
+        { label: 'Commits', count: this.totalIssues },
+        { label: 'First Contribuition', count: this.firstContributionDate }
       ]
     }
   }
@@ -28,10 +35,10 @@ export default {
 <style lang="scss" scoped>
 .content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
-.label {
-}
+
 .count {
   color: orange;
   text-align: center;

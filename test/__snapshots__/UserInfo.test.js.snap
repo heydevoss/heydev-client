@@ -14,11 +14,11 @@ exports[`<UserInfo/> Component renders correctly 1`] = `
     <span
       class="user--name"
     >
-      MyName
+      
     </span>
      
     <span>
-      A little about me...
+      
     </span>
      
     <span
@@ -27,7 +27,7 @@ exports[`<UserInfo/> Component renders correctly 1`] = `
       <i
         class="el-icon-location"
       />
-       Location, LO.
+       
     
     </span>
   </div>

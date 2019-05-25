@@ -1,15 +1,16 @@
 <template>
   <div class="content">
-    <avatar class="user--avatar" />
+    <avatar :avatar-url="this.avatarUrl" class="user--avatar" />
     <div class="user--info">
-      <span class="user--name">MyName</span>
-      <span>A little about me...</span>
+      <span class="user--name">{{ this.name }}</span>
+      <span>{{ this.bio }}</span>
       <span class="user--location">
-        <i class="el-icon-location" /> Location, LO.
+        <i class="el-icon-location" /> {{ this.location }}
       </span>
     </div>
   </div>
 </template>
+
 <script>
 import Avatar from '@/components/commons/Avatar'
 
@@ -17,9 +18,11 @@ export default {
   name: 'UserInfo',
   components: {
     Avatar
-  }
+  },
+  props: { name: String, bio: String, location: String, avatarUrl: String }
 }
 </script>
+
 <style lang="scss" scoped>
 .content {
   display: flex;

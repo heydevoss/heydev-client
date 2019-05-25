@@ -1,9 +1,23 @@
-query getContributors($login: String!){ 
-  organization {
-    contributor(login: $login) {
+query  getContributor($login: String!){ 
+  organization{
+    contributor(login: $login){
+      id
       login
       name
+      location
       bio
+      email
+      websiteUrl
+      avatarUrl
+      firstContributionDate
+      totalCommits
+      totalIssues
+      totalPullRequests
+      totalIssuesOpen
+      totalIssuesOpen
+      totalIssuesClosed
+      totalPullRequestsOpen
+      totalPullRequestsClosed
     }
   }
 }
