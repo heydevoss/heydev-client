@@ -11,7 +11,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      2
+      
     
     </span>
      
@@ -30,7 +30,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      20
+      
     
     </span>
      
@@ -49,7 +49,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      10
+      
     
     </span>
      
