@@ -3,6 +3,7 @@ query {
     name
     avatarUrl
     url
+    login
     websiteUrl
     totalPullRequests
     totalCommits

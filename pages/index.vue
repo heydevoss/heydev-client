@@ -4,10 +4,12 @@
       <Avatar :avatar-url="organization.avatarUrl" class="org--avatar" />
       <div>
         <span class="org--name">{{ organization.name }}</span>
-        <img
-          width="30px"
-          heigth="30px"
-          :src="require('@/assets/githubIcon.svg')"
+         <button @click="redirectToOrgSite" class="org-info--github"/>
+      <organization-counts 
+        :totalPullRequests="organization.totalPullRequests"
+        :totalIssues="organization.totalIssues"
+        :totalCommits="organization.totalCommits"
+        class="org-info--counts"
         />
       </div>
     </div>
@@ -25,6 +27,7 @@
 <script>
 import ContributorsList from '@/components/organization/ContributorsList'
 import RepositoriesList from '@/components/organization/RepositoriesList'
+import OrganizationCounts from '@/components/organization/OrganizationCounts'
 import getOrganization from '@/apollo/queries/getOrganization.gql'
 
 import Avatar from '@/components/commons/Avatar'
@@ -34,15 +37,19 @@ export default {
   components: {
     Avatar,
     ContributorsList,
-    RepositoriesList
+    RepositoriesList,
+    OrganizationCounts
   },
-
+  methods: {
+    redirectToOrgSite () {
+      window.location = `https://github.com/${this.organization.login}`
+    }
+  },
   data() {
     return {
       organization: {}
     }
   },
-
   apollo: {
     organization: {
       query: getOrganization
@@ -79,6 +86,18 @@ export default {
 .org--name {
   font-size: calc(3em + 1vw);
 }
+.org-info--counts {
+  margin-top: 20%;
+}
+
+.org-info--github {
+  background: url('~@/assets/githubIcon.svg');
+  width: 30px;
+  height: 30px;
+  border: none !important;
+  cursor: pointer;
+}
+
 section {
   margin-top: 40px;
 }
