@@ -30,7 +30,8 @@ export default {
    */
   plugins: [
     // Adds internationalization and global components
-    { src: '@/plugins/element-ui', ssr: false }
+    { src: '@/plugins/element-ui', ssr: false },
+    { src: '@/plugins/chart', ssr: false }
   ],
 
   /*

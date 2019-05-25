@@ -19,18 +19,22 @@
         class="user-stats"
       />
     </div>
+
+    <contribution-chart> </contribution-chart>
   </div>
 </template>
 <script>
 import UserInfo from '@/components/user/UserInfo'
 import UserStats from '@/components/user/UserStats'
+import ContributionChart from '@/components/user/ContributionChart'
 import getContributor from '@/apollo/queries/getContributor.gql'
 
 export default {
   name: 'User',
   components: {
     UserInfo,
-    UserStats
+    UserStats,
+    ContributionChart
   },
 
   data() {
