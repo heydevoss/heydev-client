@@ -41,8 +41,10 @@ export default {
   apollo: {
     organization: {
       query: getContributor,
-      variables: {
-        login: 'thayannevls' // this.userName ??
+      variables() {
+        return {
+          login: this.userName
+        }
       }
     }
   }
