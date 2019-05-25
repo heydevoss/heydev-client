@@ -23,7 +23,6 @@ export default {
   computed: {
     isAuthenticated() {
       return !!this.$apolloHelpers.getToken()
-
     }
   }
 }

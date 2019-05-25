@@ -1,18 +1,21 @@
 <template>
   <div class="content">
     <div class="header">
-
-      <user-info :name="this.organization.contributor.name"
-                 :bio="this.organization.contributor.bio" 
-                 :location="this.organization.contributor.location"
-                 :avatarUrl="this.organization.contributor.avatarUrl"
-                 class="user-info" />
+      <user-info
+        :name="this.organization.contributor.name"
+        :bio="this.organization.contributor.bio"
+        :location="this.organization.contributor.location"
+        :avatar-url="this.organization.contributor.avatarUrl"
+        class="user-info"
+      />
       <el-divider direction="vertical" class="divider" />
-      {{this.userName}}
-      <user-stats :totalPullRequests="this.organization.contributor.totalPullRequests"
-                  :totalCommits="this.organization.contributor.totalCommits"
-                  :totalIssues="this.organization.contributor.totalIssues"
-                  class="user-stats" />
+      {{ this.userName }}
+      <user-stats
+        :total-pull-requests="this.organization.contributor.totalPullRequests"
+        :total-commits="this.organization.contributor.totalCommits"
+        :total-issues="this.organization.contributor.totalIssues"
+        class="user-stats"
+      />
     </div>
   </div>
 </template>
@@ -34,17 +37,15 @@ export default {
       organization: {}
     }
   },
-  
+
   apollo: {
     organization: {
       query: getContributor,
       variables: {
-        login: "thayannevls" //this.userName ??
+        login: 'thayannevls' // this.userName ??
       }
     }
   }
-
-
 }
 </script>
 

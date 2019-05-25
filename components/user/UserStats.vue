@@ -14,6 +14,11 @@
 export default {
   name: 'UserStats',
   components: {},
+  props: {
+    totalPullRequests: Number,
+    totalCommits: Number,
+    totalIssues: Number
+  },
   data() {
     return {
       stats: [
@@ -22,10 +27,7 @@ export default {
         { label: 'Commits', count: this.totalIssues }
       ]
     }
-  },
-  props: {totalPullRequests: Number,
-          totalCommits: Number,
-          totalIssues: Number}
+  }
 }
 </script>
 <style lang="scss" scoped>
