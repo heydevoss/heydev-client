@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Avatar throws error when image is not provided. Setted a default image in `assets/`
 - Organization query with wrong sintax.
 
+### Changed
+
+- Package name `NeoLite` to `HeyDev`.
+
 ## [0.1.0] - 2019-05-06
 
 ### Added
