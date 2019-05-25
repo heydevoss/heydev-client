@@ -19,7 +19,7 @@ export default {
   components: {
     Avatar
   },
-  props: { name: String, bio: String, location: String, avatarUrl: String }
+  props: { name: String, bio: String, location: String, avatarUrl: String}
 }
 </script>
 
