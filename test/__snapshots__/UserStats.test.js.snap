@@ -8,32 +8,24 @@ exports[`<UserStats/> Component renders correctly 1`] = `
     class="stat"
   >
     <span
-      class="count"
-    >
-      
-      2
-    
-    </span>
-     
-    <span
       class="label"
     >
       
       Pull Requests
     
     </span>
-  </div>
-  <div
-    class="stat"
-  >
+     
     <span
       class="count"
     >
       
-      20
+      
     
     </span>
-     
+  </div>
+  <div
+    class="stat"
+  >
     <span
       class="label"
     >
@@ -41,23 +33,50 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       Issues
     
     </span>
+     
+    <span
+      class="count"
+    >
+      
+      
+    
+    </span>
   </div>
   <div
     class="stat"
   >
     <span
-      class="count"
-    >
-      
-      10
-    
-    </span>
-     
-    <span
       class="label"
     >
       
       Commits
+    
+    </span>
+     
+    <span
+      class="count"
+    >
+      
+      
+    
+    </span>
+  </div>
+  <div
+    class="stat"
+  >
+    <span
+      class="label"
+    >
+      
+      First Contribuition
+    
+    </span>
+     
+    <span
+      class="count"
+    >
+      
+      
     
     </span>
   </div>
