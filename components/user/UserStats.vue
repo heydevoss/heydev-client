@@ -17,12 +17,15 @@ export default {
   data() {
     return {
       stats: [
-        { label: 'Pull Requests', count: 2 },
-        { label: 'Issues', count: 20 },
-        { label: 'Commits', count: 10 }
+        { label: 'Pull Requests', count: this.totalPullRequests },
+        { label: 'Issues', count: this.totalCommits },
+        { label: 'Commits', count: this.totalIssues }
       ]
     }
-  }
+  },
+  props: {totalPullRequests: Number,
+          totalCommits: Number,
+          totalIssues: Number}
 }
 </script>
 <style lang="scss" scoped>
@@ -30,8 +33,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
 }
-.label {
-}
+
 .count {
   color: orange;
   text-align: center;
