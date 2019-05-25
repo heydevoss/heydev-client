@@ -1,8 +1,19 @@
-import { mount } from '@vue/test-utils'
-import ProfileCard from '@/components/organization/ProfileCard.vue'
+import { shallowMount } from '@vue/test-utils'
+import ContributorCard from '@/components/organization/ContributorCard.vue'
 
-describe('ProfileCard', () => {
-  const wrapper = mount(ProfileCard)
+describe('<ContributorCard/>', () => {
+  const wrapper = shallowMount(ContributorCard, {
+    propsData: {
+      contributor: {
+        avatarUrl: '~/assets/avatar/default.png',
+        login: 'test',
+        bio: 'hey thats my test',
+        totalIssues: 10,
+        totalPullRequests: 2,
+        totalCommits: 3
+      }
+    }
+  })
 
   test('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
