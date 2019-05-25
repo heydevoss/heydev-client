@@ -41,14 +41,12 @@ export default {
 
 <style scoped>
 .container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
-  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
 a {

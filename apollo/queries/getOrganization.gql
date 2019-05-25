@@ -4,5 +4,8 @@ query {
     avatarUrl
     url
     websiteUrl
+    totalPullRequests
+    totalCommits
+    totalIssues
   }
 }

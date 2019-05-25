@@ -1,18 +1,14 @@
 <template>
-  <div>
+  <div @click="redirectToUserPage">
     <el-row>
       <el-col>
-        <el-card class="card" :body-style="{ padding: '0px' }">
-          <br /><img
-            src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-            class="image"
-          />
+        <el-card class="card" shadow="hover" :body-style="{ padding: '0px' }">
+          <br /><img :src="contributor.avatarUrl" class="image" />
           <div style="padding: 0px;">
-            <span>mateusoliveira2</span>
+            <span>{{ contributor.login }}</span>
 
             <div class="description">
-              <br /><span
-                >aqui vai ter a descrição do user e tudo mais que der né</span
+              <br /><span>{{ contributor.bio }}</span
               ><br />
               <br />
             </div>
@@ -20,9 +16,9 @@
           <footer class="box-footer">
             <table>
               <tr>
-                <td>5</td>
-                <td>10</td>
-                <td>7</td>
+                <td>{{ contributor.totalIssues }}</td>
+                <td>{{ contributor.totalPullRequests }}</td>
+                <td>{{ contributor.totalCommits }}</td>
               </tr>
               <tr>
                 <td>Issues</td>
@@ -39,14 +35,19 @@
 
 <script>
 export default {
-  name: 'ProfileCard',
-  props: ['profile']
+  name: 'ContributorCard',
+  props: {
+    contributor: Object
+  },
+  methods: {
+    redirectToUserPage() {
+      this.$router.replace(`/user/${this.contributor.login}`)
+    }
+  }
 }
 </script>
 
-<style>
-@import url('//unpkg.com/element-ui@2.8.2/lib/theme-chalk/index.css');
-
+<style lang="scss" scoped>
 table {
   border-collapse: separate;
   border-spacing: 13px;
@@ -62,10 +63,12 @@ table {
   height: 350px;
   background-color: #47525e;
   color: white;
+  cursor: pointer;
 }
 
 .description {
-  text-align: left;
+  text-align: center;
+  font-size: 0.8rem;
   justify-content: center;
   margin: 3px;
 }
