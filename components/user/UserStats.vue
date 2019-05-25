@@ -8,7 +8,6 @@
         {{ stat.count }}
       </span>
     </div>
-    
   </div>
 </template>
 <script>
@@ -19,7 +18,7 @@ export default {
     totalPullRequests: Number,
     totalCommits: Number,
     totalIssues: Number,
-    firstContributionDate: String 
+    firstContributionDate: String
   },
   data() {
     return {

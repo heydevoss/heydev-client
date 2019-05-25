@@ -13,7 +13,9 @@
         :total-pull-requests="this.organization.contributor.totalPullRequests"
         :total-commits="this.organization.contributor.totalCommits"
         :total-issues="this.organization.contributor.totalIssues"
-        :firstContributionDate="this.organization.contributor.firstContributionDate" 
+        :first-contribution-date="
+          this.organization.contributor.firstContributionDate
+        "
         class="user-stats"
       />
     </div>
