@@ -13,17 +13,17 @@
         :total-pull-requests="this.organization.contributor.totalPullRequests"
         :total-commits="this.organization.contributor.totalCommits"
         :total-issues="this.organization.contributor.totalIssues"
-        :first-contribution-date="
-          this.organization.contributor.firstContributionDate
-        "
+        :first-contribution-date="this.organization.contributor.firstContributionDate"
         class="user-stats"
       />
     </div>
-
-    <contribution-chart 
+    <br>
+    <el-divider direction="horizontal" class="divider" />
+    <contribution-chart class="chart"
         :total-pull-requests="this.organization.contributor.totalPullRequests"
         :total-commits="this.organization.contributor.totalCommits"
-        :total-issues="this.organization.contributor.totalIssues"> </contribution-chart>
+        :total-issues="this.organization.contributor.totalIssues"/> 
+
   </div>
 </template>
 <script>
@@ -61,6 +61,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.chart{
+  width: 300px;
+  height: 300px;
+}
 .content {
   padding: 40px 60px;
 }
