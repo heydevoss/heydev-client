@@ -9,7 +9,6 @@
         class="user-info"
       />
       <el-divider direction="vertical" class="divider" />
-      {{ this.userName }}
       <user-stats
         :total-pull-requests="this.organization.contributor.totalPullRequests"
         :total-commits="this.organization.contributor.totalCommits"
