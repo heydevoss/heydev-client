@@ -26,13 +26,11 @@ export default {
     GitHubButton,
     Avatar
   },
-
   data() {
     return {
       organization: {}
     }
   },
-
   apollo: {
     organization: {
       query: getOrganization
