@@ -13,30 +13,42 @@
         :total-pull-requests="this.organization.contributor.totalPullRequests"
         :total-commits="this.organization.contributor.totalCommits"
         :total-issues="this.organization.contributor.totalIssues"
-        :first-contribution-date="this.organization.contributor.firstContributionDate"
+        :first-contribution-date="
+          this.organization.contributor.firstContributionDate
+        "
         class="user-stats"
       />
     </div>
-    <br>
+    <br />
     <el-divider direction="horizontal" class="divider" />
     <span class="title">Overview</span>
     <div class="charts">
-        <contribution-chart class="chart"
-          :open-pr-contributor="this.organization.contributor.totalPullRequestsOpen"
-          :closed-pr-contributor="this.organization.contributor.totalPullRequestsClosed"
-          :open-issues-contributor="this.organization.contributor.totalIssuesOpen"
-          :closed-issues-contributor="this.organization.contributor.totalIssuesClosed"
-          :commits-contributor="this.organization.contributor.totalCommits"/> 
-    
-      <CompareChart class="chart"
+      <contribution-chart
+        class="chart"
+        :open-pr-contributor="
+          this.organization.contributor.totalPullRequestsOpen
+        "
+        :closed-pr-contributor="
+          this.organization.contributor.totalPullRequestsClosed
+        "
+        :open-issues-contributor="this.organization.contributor.totalIssuesOpen"
+        :closed-issues-contributor="
+          this.organization.contributor.totalIssuesClosed
+        "
+        :commits-contributor="this.organization.contributor.totalCommits"
+      />
+
+      <CompareChart
+        class="chart"
         :pr-contributor="this.organization.contributor.totalPullRequests"
         :issues-contributor="this.organization.contributor.totalIssues"
         :commits-contributor="this.organization.contributor.totalCommits"
         :pr-organization="this.organization.totalPullRequests"
         :issues-organization="this.organization.totalIssues"
-        :commits-organization="this.organization.totalCommits"/>
+        :commits-organization="this.organization.totalCommits"
+      />
 
-      <ContributionTimeLineChart/>
+      <ContributionTimeLineChart />
     </div>
   </div>
 </template>
@@ -79,7 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.chart{
+.chart {
   width: 500px;
   height: 500px;
 }
@@ -95,7 +107,7 @@ export default {
 .el-divider--vertical {
   height: 10em;
 }
-.charts{
+.charts {
   display: flex;
   justify-content: space-between;
   width: 90vw;
@@ -120,7 +132,7 @@ export default {
   .charts {
     flex-direction: column;
   }
-  .chart{
+  .chart {
     width: 200px;
     height: 200px;
   }
