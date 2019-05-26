@@ -1,5 +1,8 @@
 query  getContributor($login: String!){ 
   organization{
+    totalIssues
+    totalPullRequests
+    totalCommits
     contributor(login: $login){
       id
       login
@@ -13,7 +16,6 @@ query  getContributor($login: String!){
       totalCommits
       totalIssues
       totalPullRequests
-      totalIssuesOpen
       totalIssuesOpen
       totalIssuesClosed
       totalPullRequestsOpen

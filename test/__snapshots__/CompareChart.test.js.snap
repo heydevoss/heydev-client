@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompareChart renders correctly 1`] = `
+<vue-no-ssr>
+  <div>
+    <div>
+      <chartjs-bar
+        beginzero="true"
+        class="chart"
+        datasets="[object Object],[object Object]"
+        labels="Pull Requests,Issues,Commits"
+        option="[object Object]"
+      />
+    </div>
+  </div>
+</vue-no-ssr>
+`;

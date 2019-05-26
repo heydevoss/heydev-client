@@ -24,8 +24,8 @@ export default {
     return {
       stats: [
         { label: 'Pull Requests', count: this.totalPullRequests },
-        { label: 'Issues', count: this.totalCommits },
-        { label: 'Commits', count: this.totalIssues },
+        { label: 'Issues', count: this.totalIssues },
+        { label: 'Commits', count: this.totalCommits },
         { label: 'First Contribuition', count: this.firstContributionDate }
       ]
     }

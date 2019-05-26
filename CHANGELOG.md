@@ -33,7 +33,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Connected with server using localhost 5000.
 - Configured apollo client.
 - Nuxt project structure and configured Travis.
+- Contributor views.
 - Contributor activities timeline
+
 
 ### Fixed
 
