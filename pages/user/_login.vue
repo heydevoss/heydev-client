@@ -3,19 +3,19 @@
     <div v-if="!$apollo.queries.organization.loading" class="content">
       <div class="header">
         <user-info
-          :name="this.organization.contributor.name"
-          :bio="this.organization.contributor.bio"
-          :location="this.organization.contributor.location"
-          :avatar-url="this.organization.contributor.avatarUrl"
-          class="user-info"
-        />
+        :name="organization.contributor.name"
+        :bio="organization.contributor.bio"
+        :location="organization.contributor.location"
+        :avatar-url="organization.contributor.avatarUrl"
+        class="user-info"
+      />
         <el-divider direction="vertical" class="divider" />
         <user-stats
-          :total-pull-requests="this.organization.contributor.totalPullRequests"
-          :total-commits="this.organization.contributor.totalCommits"
-          :total-issues="this.organization.contributor.totalIssues"
+          :total-pull-requests="organization.contributor.totalPullRequests"
+          :total-commits="organization.contributor.totalCommits"
+          :total-issues="organization.contributor.totalIssues"
           :first-contribution-date="
-            this.organization.contributor.firstContributionDate
+            organization.contributor.firstContributionDate
           "
           class="user-stats"
         />

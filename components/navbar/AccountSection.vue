@@ -2,8 +2,8 @@
   <div>
     <LoginButton v-if="!isAuthenticated" />
     <div class="logged-user" v-else>
-      <avatar class="avatar"/>
-      <span class="user--name">{{me.name || me.login}}</span>
+      <avatar @click="redirectToUser" class="avatar"/>
+      <span @click="redirectToUser" class="user--name">{{me.name || me.login}}</span>
       <LogoutButton class="logout"/>
     </div>
   </div>
@@ -20,6 +20,11 @@ export default {
     LoginButton,
     LogoutButton,
     Avatar
+  },
+  methods: {
+    redirectToUser() {
+      this.$router.replace(`/user/${this.me.login}`)
+    }
   },
   computed: {
     isAuthenticated() {
@@ -38,6 +43,7 @@ export default {
   width: 40px;
   height: 40px;
   margin-right: 5px;
+  cursor: pointer;
 }
 .logged-user {
   display: flex;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepositoriesList/> should be a Vue instance and renders correctly 1`] = `
+<div
+  quantity="1"
+>
+  <apolloquery-stub
+    query="[object Object]"
+    variables="[object Object]"
+  />
+   
+  <button
+    class="button--show-more"
+  />
+</div>
+`;

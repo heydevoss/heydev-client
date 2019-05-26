@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContributorCard/> is a Vue instance 1`] = `
+<div>
+  <el-row-stub>
+    <el-col-stub>
+      <el-card-stub
+        body-style="[object Object]"
+        class="card"
+        shadow="hover"
+      >
+        <br />
+        <img
+          class="image"
+          src="~/assets/avatar/default.png"
+        />
+         
+        <div
+          style="padding: 0px;"
+        >
+          <span>
+            test
+          </span>
+           
+          <div
+            class="description"
+          >
+            <br />
+            <span>
+              hey thats my test
+            </span>
+            <br />
+             
+            <br />
+          </div>
+        </div>
+         
+        <footer
+          class="box-footer"
+        >
+          <table>
+            <tr>
+              <td>
+                10
+              </td>
+               
+              <td>
+                2
+              </td>
+               
+              <td>
+                3
+              </td>
+            </tr>
+             
+            <tr>
+              <td>
+                Issues
+              </td>
+               
+              <td>
+                Pull Requests
+              </td>
+               
+              <td>
+                Commit
+              </td>
+            </tr>
+          </table>
+        </footer>
+      </el-card-stub>
+    </el-col-stub>
+  </el-row-stub>
+</div>
+`;

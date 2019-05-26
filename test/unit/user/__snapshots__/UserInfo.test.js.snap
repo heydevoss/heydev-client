@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<UserInfo/> Component renders correctly 1`] = `
+exports[`<UserInfo/> Component is a Vue instance and renders correctly 1`] = `
 <div
   class="content"
 >
-  <avatar-stub
+  <img
     class="user--avatar"
+    src="~/assets/avatar/default.png"
   />
    
   <div
@@ -14,11 +15,11 @@ exports[`<UserInfo/> Component renders correctly 1`] = `
     <span
       class="user--name"
     >
-      
+      UserTest
     </span>
      
     <span>
-      
+      Hey thats my test
     </span>
      
     <span
@@ -27,7 +28,7 @@ exports[`<UserInfo/> Component renders correctly 1`] = `
       <i
         class="el-icon-location"
       />
-       
+       Campina Grande
     
     </span>
   </div>
