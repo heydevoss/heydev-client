@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContributionTimeLineChart renders correctly 1`] = `
+exports[`<ContributionTimeLineChart/> should be a Vue instance and render correctly 1`] = `
 <div>
   <div
     class="card"
   >
-    <chartjs-line
+    <div
       backgroundcolor="#34F6F2"
       beginzero="true"
       bind="true"
       bordercolor="#34F6F2"
-      class="chart"
+      class="chartjs-line-test chart"
       data="1,9,0,10,28"
       datalabel="Commits"
       labels="Janeiro,Fevereiro,Março,Abril,Maio"

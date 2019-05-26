@@ -38,7 +38,7 @@ exports[`<UserStats/> Component should be a Vue instance and renders correctly 1
       class="count"
     >
       
-      34
+      21
     
     </span>
   </div>
@@ -57,7 +57,7 @@ exports[`<UserStats/> Component should be a Vue instance and renders correctly 1
       class="count"
     >
       
-      21
+      34
     
     </span>
   </div>

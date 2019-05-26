@@ -2,6 +2,17 @@
 
 exports[`<AccountSection/> shoulbe be a Vue instance and render correctly 1`] = `
 <div>
-  <loginbutton-stub />
+  <div>
+    <button
+      class="el-button el-button--primary"
+      type="button"
+    >
+      <!---->
+      <!---->
+      <span>
+        Login
+      </span>
+    </button>
+  </div>
 </div>
 `;

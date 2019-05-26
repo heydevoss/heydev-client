@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CompareChart renders correctly 1`] = `
-<vue-no-ssr>
+exports[`<CompareChart/> should be a Vue instance and render correctly 1`] = `
+<vue-no-ssr-stub>
   <div>
     <div>
-      <chartjs-bar
+      <div
         beginzero="true"
-        class="chart"
+        class="chartjs-bar-test chart"
         datasets="[object Object],[object Object]"
         labels="Pull Requests,Issues,Commits"
         option="[object Object]"
       />
     </div>
   </div>
-</vue-no-ssr>
+</vue-no-ssr-stub>
 `;

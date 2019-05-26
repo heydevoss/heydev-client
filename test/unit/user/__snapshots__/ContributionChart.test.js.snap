@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContributionChart renders correctly 1`] = `
-<vue-no-ssr>
+exports[`ContributionChart should be a Vue instance and render correctly 1`] = `
+<vue-no-ssr-stub>
   <div>
     <br />
      
-    <chartjs-doughnut
+    <div
       bind="true"
-      class="chart"
+      class="chartjs-doughnut-test chart"
       datasets="[object Object]"
       labels="Pull Requests Open,Pull Requests Closed,Issues Open,Issues Closed,Commits"
       option="[object Object]"
     />
   </div>
-</vue-no-ssr>
+</vue-no-ssr-stub>
 `;

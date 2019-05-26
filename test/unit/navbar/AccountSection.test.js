@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import AccountSection from '@/components/navbar/AccountSection.vue'
 import LogoutButton from '@/components/commons/LogoutButton.vue'
 import LoginButton from '@/components/commons/LoginButton.vue'
@@ -12,16 +12,21 @@ describe('<AccountSection/>', () => {
   window.location = { reload: jest.fn() }
   const onLogout = jest.fn()
   const getToken = jest.fn()
-  const wrapper = shallowMount(AccountSection, {
+  const replace = jest.fn()
+
+  const wrapper = mount(AccountSection, {
     mocks: {
       $apolloHelpers: {
         onLogout,
         getToken
+      },
+      $router: {
+        replace
       }
     },
     stubs: {
       'el-button': Button,
-      'login-button': LoginButton,
+      LoginButton,
       'logout-button': LogoutButton
     }
   })
@@ -29,5 +34,26 @@ describe('<AccountSection/>', () => {
   it('shoulbe be a Vue instance and render correctly', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.element).toMatchSnapshot()
+  })
+
+  it('should contain button', () => {
+    expect(wrapper.html().includes('<button>'))
+  })
+
+  it('should contain <LoginButton/> when not logged', () => {
+    expect(wrapper.contains(LoginButton)).toBe(true)
+    expect(wrapper.contains(LogoutButton)).toBe(false)
+  })
+
+  it('isAuthenticated should be false when is not logged', () => {
+    expect(wrapper.vm.isAuthenticated).toBe(false)
+  })
+
+  it('isAuthenticated should be true when user log', () => {
+    const loginButton = wrapper.find('button')
+    loginButton.trigger('click')
+  })
+
+  it('should contain <LogoutButton/> when user is logged', () => {
   })
 })
