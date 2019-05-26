@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline/> Component renders correctly 1`] = `
+<div
+  class="block"
+>
+  <br />
+  <el-timeline>
+    <el-timeline-item
+      color="grey"
+      icon="el-icon-s-promotion"
+      size="large"
+      timestamp="2019-06-12 20:46"
+      type="primary"
+    >
+      
+      New Pull Request on Tamburetei
+    
+    </el-timeline-item>
+    <el-timeline-item
+      color="grey"
+      icon="el-icon-more"
+      size="large"
+      timestamp="2019-06-12 16:05"
+    >
+      
+      Commented on IssueAi #48 issue
+    
+    </el-timeline-item>
+    <el-timeline-item
+      color="grey"
+      icon="el-icon-star-on"
+      size="large"
+      timestamp="2019-06-11 13:56"
+    >
+      
+      Star in Roadmap
+    
+    </el-timeline-item>
+    <el-timeline-item
+      color="grey"
+      icon="el-icon-circle-plus-outline"
+      size="large"
+      timestamp="2019-06-10 19:36"
+    >
+      
+      Commit on IssueAi
+    
+    </el-timeline-item>
+  </el-timeline>
+</div>
+`;

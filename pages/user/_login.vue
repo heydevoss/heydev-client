@@ -20,37 +20,39 @@
           class="user-stats"
         />
       </div>
-    </div>
-    <br />
-    <el-divider direction="horizontal" class="divider" />
-    <span class="title">Overview</span>
-    <div class="charts">
-      <contribution-chart
-        class="chart"
-        :open-pr-contributor="
-          this.organization.contributor.totalPullRequestsOpen
-        "
-        :closed-pr-contributor="
-          this.organization.contributor.totalPullRequestsClosed
-        "
-        :open-issues-contributor="this.organization.contributor.totalIssuesOpen"
-        :closed-issues-contributor="
-          this.organization.contributor.totalIssuesClosed
-        "
-        :commits-contributor="this.organization.contributor.totalCommits"
-      />
 
-      <CompareChart
-        class="chart"
-        :pr-contributor="this.organization.contributor.totalPullRequests"
-        :issues-contributor="this.organization.contributor.totalIssues"
-        :commits-contributor="this.organization.contributor.totalCommits"
-        :pr-organization="this.organization.totalPullRequests"
-        :issues-organization="this.organization.totalIssues"
-        :commits-organization="this.organization.totalCommits"
-      />
+      <el-divider direction="horizontal" class="divider" />
+      <span class="title">Overview</span>
+      <div class="charts">
+        <contribution-chart
+          class="chart"
+          :open-pr-contributor="
+            this.organization.contributor.totalPullRequestsOpen
+          "
+          :closed-pr-contributor="
+            this.organization.contributor.totalPullRequestsClosed
+          "
+          :open-issues-contributor="
+            this.organization.contributor.totalIssuesOpen
+          "
+          :closed-issues-contributor="
+            this.organization.contributor.totalIssuesClosed
+          "
+          :commits-contributor="this.organization.contributor.totalCommits"
+        />
 
-      <ContributionTimeLineChart />
+        <CompareChart
+          class="chart"
+          :pr-contributor="this.organization.contributor.totalPullRequests"
+          :issues-contributor="this.organization.contributor.totalIssues"
+          :commits-contributor="this.organization.contributor.totalCommits"
+          :pr-organization="this.organization.totalPullRequests"
+          :issues-organization="this.organization.totalIssues"
+          :commits-organization="this.organization.totalCommits"
+        />
+        <ContributionTimeLineChart />
+      </div>
+      <contributor-timeline />
     </div>
   </div>
 </template>
@@ -61,6 +63,7 @@ import ContributionChart from '@/components/user/ContributionChart'
 import CompareChart from '@/components/user/CompareChart'
 import ContributionTimeLineChart from '@/components/user/ContributionTimeLineChart'
 import getContributor from '@/apollo/queries/getContributor.gql'
+import ContributorTimeline from '@/components/user/ContributorTimeline'
 
 export default {
   name: 'User',
@@ -69,7 +72,8 @@ export default {
     UserStats,
     ContributionChart,
     CompareChart,
-    ContributionTimeLineChart
+    ContributionTimeLineChart,
+    ContributorTimeline
   },
 
   data() {
@@ -94,8 +98,8 @@ export default {
 
 <style lang="scss" scoped>
 .chart {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 400px;
 }
 .content {
   padding: 40px 60px;

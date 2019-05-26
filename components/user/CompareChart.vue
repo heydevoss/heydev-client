@@ -61,8 +61,8 @@ export default {
 
 <style scoped>
 .chart {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 400px;
 }
 
 @media screen and (max-width: 820px) {
