@@ -10,7 +10,7 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       color="grey"
       icon="el-icon-s-promotion"
       size="large"
-      timestamp="2018-04-12 20:46"
+      timestamp="2019-06-12 20:46"
       type="primary"
     >
       
@@ -21,7 +21,7 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       color="grey"
       icon="el-icon-more"
       size="large"
-      timestamp="2018-04-03 20:46"
+      timestamp="2019-06-12 16:05"
     >
       
       Commented on IssueAi #48 issue
@@ -31,7 +31,7 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       color="grey"
       icon="el-icon-star-on"
       size="large"
-      timestamp="2018-04-03 20:46"
+      timestamp="2019-06-11 13:56"
     >
       
       Star in Roadmap
@@ -41,7 +41,7 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       color="grey"
       icon="el-icon-circle-plus-outline"
       size="large"
-      timestamp="2018-04-03 20:46"
+      timestamp="2019-06-10 19:36"
     >
       
       Commit on IssueAi

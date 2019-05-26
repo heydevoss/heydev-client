@@ -19,21 +19,21 @@
         class="user-stats"
       />
     </div>
-    <timeline />
+    <contributor-timeline />
   </div>
 </template>
 <script>
 import UserInfo from '@/components/user/UserInfo'
 import UserStats from '@/components/user/UserStats'
 import getContributor from '@/apollo/queries/getContributor.gql'
-import Timeline from '@/components/user/Timeline'
+import ContributorTimeline from '@/components/user/ContributorTimeline'
 
 export default {
   name: 'User',
   components: {
     UserInfo,
     UserStats,
-    Timeline
+    ContributorTimeline
   },
 
   data() {

@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
-import Timeline from '@/components/user/Timeline'
+import ContributorTimeline from '@/components/user/ContributorTimeline'
 
 describe('<Timeline/> Component', () => {
-  const wrapper = shallowMount(Timeline)
+  const wrapper = shallowMount(ContributorTimeline)
 
   it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()

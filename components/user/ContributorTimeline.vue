@@ -23,7 +23,7 @@ export default {
       activities: [
         {
           content: 'New Pull Request on Tamburetei',
-          timestamp: '2018-04-12 20:46',
+          timestamp: '2019-06-12 20:46',
           size: 'large',
           type: 'primary',
           color: 'grey',
@@ -31,21 +31,21 @@ export default {
         },
         {
           content: 'Commented on IssueAi #48 issue',
-          timestamp: '2018-04-03 20:46',
+          timestamp: '2019-06-12 16:05',
           color: 'grey',
           icon: 'el-icon-more',
           size: 'large'
         },
         {
           content: 'Star in Roadmap',
-          timestamp: '2018-04-03 20:46',
+          timestamp: '2019-06-11 13:56',
           size: 'large',
           icon: 'el-icon-star-on',
           color: 'grey'
         },
         {
           content: 'Commit on IssueAi',
-          timestamp: '2018-04-03 20:46',
+          timestamp: '2019-06-10 19:36',
           icon: 'el-icon-circle-plus-outline',
           color: 'grey',
           size: 'large'
