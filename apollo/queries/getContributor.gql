@@ -1,5 +1,8 @@
 query  getContributor($login: String!){ 
   organization{
+    totalIssues
+    totalPullRequests
+    totalCommits
     contributor(login: $login){
       id
       login

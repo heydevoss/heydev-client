@@ -1,14 +1,12 @@
 <template>
     <vue-no-ssr>
-        <div class="chart">
-            
-            <span class="title"> Contributions </span> 
-
-            <br><chartjs-doughnut
-                v-bind:bind="true"
-                v-bind:datasets="datasets"
-                v-bind:labels="labels"
-                v-bind:option="options"
+        <div>
+            <br>
+            <chartjs-doughnut class="chart"
+                :bind="true"
+                :datasets="datasets"
+                :labels="labels"
+                :option="options"
             />
         </div>
     </vue-no-ssr>
@@ -20,12 +18,12 @@ export default {
         return {
             datasets: [
                 {
-                data: [ this.totalPullRequests, this.totalCommits, this.totalIssues],
-                backgroundColor: ["#b388ff", "#2196f3", "#80d8ff"],
-                hoverBackgroundColor: ["#673ab7", "#0000FF", "#00FFFF"]
+                data: [this.openPrContributor, this.closedPrContributor, this.openIssuesContributor, this.closedIssuesContributor, this.commitsContributor],
+                backgroundColor: ["#F5CCE8","#FC7478", "#2196f3", "#80d8ff", "#b388ff"],
+                hoverBackgroundColor: ["#F475CC", "#FC2F36", "#0000FF", "#00FFFF", "#673ab7"]
                 }
             ],
-            labels: ["Pull Requests", "Commits", "Issues"],
+            labels: ['Pull Requests Open', 'Pull Requests Closed', 'Issues Open', 'Issues Closed', 'Commits'],
             options: {
                 legend: {
                     position: 'right'
@@ -34,27 +32,32 @@ export default {
         }
     },
     props: {
-        totalPullRequests: Number,
-        totalCommits: Number,
-        totalIssues: Number
+        openPrContributor: Number,
+        closedPrContributor: Number,
+        openIssuesContributor: Number,
+        closedIssuesContributor: Number,
+        commitsContributor: Number
     }
 };
 </script>
 <style>
-.title{
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
-    color: black;
-}
+    .title{
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        color: black;
+    }
 
-.chart{
-    display: flex;
-    flex-direction: column;
-    align-items:baseline; 
-    width: 500px;
-    height: 500px;
+    .chart{
+        width: 500px;
+        height: 500px;
+    }
 
-}
+    @media screen and (max-width: 820px) {
+        .chart{
+        width: 300px;
+        height: 300px;
+        }
+    }
 </style>
 

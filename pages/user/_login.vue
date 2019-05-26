@@ -19,17 +19,33 @@
     </div>
     <br>
     <el-divider direction="horizontal" class="divider" />
-    <contribution-chart class="chart"
-        :total-pull-requests="this.organization.contributor.totalPullRequests"
-        :total-commits="this.organization.contributor.totalCommits"
-        :total-issues="this.organization.contributor.totalIssues"/> 
+    <span class="title">Overview</span>
+    <div class="charts">
+        <contribution-chart class="chart"
+          :open-pr-contributor="this.organization.contributor.totalPullRequestsOpen"
+          :closed-pr-contributor="this.organization.contributor.totalPullRequestsClosed"
+          :open-issues-contributor="this.organization.contributor.totalIssuesOpen"
+          :closed-issues-contributor="this.organization.contributor.totalIssuesClosed"
+          :commits-contributor="this.organization.contributor.totalCommits"/> 
+    
+      <CompareChart class="chart"
+        :pr-contributor="this.organization.contributor.totalPullRequests"
+        :issues-contributor="this.organization.contributor.totalIssues"
+        :commits-contributor="this.organization.contributor.totalCommits"
+        :pr-organization="this.organization.totalPullRequests"
+        :issues-organization="this.organization.totalIssues"
+        :commits-organization="this.organization.totalCommits"/>
 
+      <ContributionTimeLineChart/>
+    </div>
   </div>
 </template>
 <script>
 import UserInfo from '@/components/user/UserInfo'
 import UserStats from '@/components/user/UserStats'
 import ContributionChart from '@/components/user/ContributionChart'
+import CompareChart from '@/components/user/CompareChart'
+import ContributionTimeLineChart from '@/components/user/ContributionTimeLineChart'
 import getContributor from '@/apollo/queries/getContributor.gql'
 
 export default {
@@ -37,7 +53,9 @@ export default {
   components: {
     UserInfo,
     UserStats,
-    ContributionChart
+    ContributionChart,
+    CompareChart,
+    ContributionTimeLineChart
   },
 
   data() {
@@ -62,8 +80,8 @@ export default {
 
 <style lang="scss" scoped>
 .chart{
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
 .content {
   padding: 40px 60px;
@@ -77,6 +95,17 @@ export default {
 .el-divider--vertical {
   height: 10em;
 }
+.charts{
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+.title {
+  font-size: calc(1.5em + 1vw);
+  margin-bottom: 20px;
+  display: block;
+}
+
 @media screen and (max-width: 820px) {
   .header {
     flex-direction: column;
@@ -87,6 +116,13 @@ export default {
   .el-divider--vertical {
     visibility: hidden;
     height: 0em;
+  }
+  .charts {
+    flex-direction: column;
+  }
+  .chart{
+    width: 200px;
+    height: 200px;
   }
 }
 </style>
