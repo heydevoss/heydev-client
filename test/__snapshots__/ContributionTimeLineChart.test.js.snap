@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContributionTimeLineChart renders correctly 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <chartjs-line
+      backgroundcolor="#34F6F2"
+      beginzero="true"
+      bind="true"
+      bordercolor="#34F6F2"
+      class="chart"
+      data="1,9,0,10,28"
+      datalabel="Commits"
+      labels="Janeiro,Fevereiro,Março,Abril,Maio"
+      option="[object Object]"
+    />
+  </div>
+</div>
+`;
