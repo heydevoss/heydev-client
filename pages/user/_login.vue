@@ -1,23 +1,25 @@
 <template>
-  <div class="content">
-    <div class="header">
-      <user-info
-        :name="this.organization.contributor.name"
-        :bio="this.organization.contributor.bio"
-        :location="this.organization.contributor.location"
-        :avatar-url="this.organization.contributor.avatarUrl"
-        class="user-info"
-      />
-      <el-divider direction="vertical" class="divider" />
-      <user-stats
-        :total-pull-requests="this.organization.contributor.totalPullRequests"
-        :total-commits="this.organization.contributor.totalCommits"
-        :total-issues="this.organization.contributor.totalIssues"
-        :first-contribution-date="
-          this.organization.contributor.firstContributionDate
-        "
-        class="user-stats"
-      />
+  <div v-loading.fullscreen.lock="$apollo.queries.organization.loading">
+    <div  v-if="!$apollo.queries.organization.loading" class="content">
+      <div class="header">
+        <user-info
+          :name="this.organization.contributor.name"
+          :bio="this.organization.contributor.bio"
+          :location="this.organization.contributor.location"
+          :avatar-url="this.organization.contributor.avatarUrl"
+          class="user-info"
+        />
+        <el-divider direction="vertical" class="divider" />
+        <user-stats
+          :total-pull-requests="this.organization.contributor.totalPullRequests"
+          :total-commits="this.organization.contributor.totalCommits"
+          :total-issues="this.organization.contributor.totalIssues"
+          :first-contribution-date="
+            this.organization.contributor.firstContributionDate
+          "
+          class="user-stats"
+        />
+      </div>
     </div>
   </div>
 </template>
