@@ -19,7 +19,7 @@
         class="user-stats"
       />
     </div>
-    <timeline/>
+    <timeline />
   </div>
 </template>
 <script>
