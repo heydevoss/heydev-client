@@ -54,6 +54,7 @@
       </div>
       <contributor-timeline />
     </div>
+    <timeline/>
   </div>
 </template>
 <script>
