@@ -14,8 +14,8 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       type="primary"
     >
       
-        New Pull Request on Tamburetei
-        
+      New Pull Request on Tamburetei
+    
     </el-timeline-item>
     <el-timeline-item
       color="grey"
@@ -24,8 +24,8 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       timestamp="2018-04-03 20:46"
     >
       
-        Commented on IssueAi #48 issue
-        
+      Commented on IssueAi #48 issue
+    
     </el-timeline-item>
     <el-timeline-item
       color="grey"
@@ -34,8 +34,8 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       timestamp="2018-04-03 20:46"
     >
       
-        Star in Roadmap
-        
+      Star in Roadmap
+    
     </el-timeline-item>
     <el-timeline-item
       color="grey"
@@ -44,8 +44,8 @@ exports[`<Timeline/> Component renders correctly 1`] = `
       timestamp="2018-04-03 20:46"
     >
       
-        Commit on IssueAi
-        
+      Commit on IssueAi
+    
     </el-timeline-item>
   </el-timeline>
 </div>
