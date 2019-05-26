@@ -1,6 +1,6 @@
 <template>
   <div v-loading.fullscreen.lock="$apollo.queries.organization.loading">
-    <div  v-if="!$apollo.queries.organization.loading" class="content">
+    <div v-if="!$apollo.queries.organization.loading" class="content">
       <div class="header">
         <user-info
           :name="this.organization.contributor.name"
