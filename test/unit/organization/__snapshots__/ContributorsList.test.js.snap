@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RepositoriesList/> should be a Vue instance and renders correctly 1`] = `
+exports[`<ContributorsList/> should be a Vue instance and renders correctly 1`] = `
 <div>
   <apolloquery-stub
     query="[object Object]"

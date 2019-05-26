@@ -2,74 +2,82 @@
 
 exports[`<ContributorCard/> is a Vue instance 1`] = `
 <div>
-  <el-row-stub>
-    <el-col-stub>
-      <el-card-stub
-        body-style="[object Object]"
-        class="card"
-        shadow="hover"
+  <div
+    class="el-col el-col-24"
+  >
+    <div
+      class="el-row"
+    >
+      <div
+        class="el-card card is-hover-shadow"
       >
-        <br />
-        <img
-          class="image"
-          src="~/assets/avatar/default.png"
-        />
-         
+        <!---->
         <div
+          class="el-card__body"
           style="padding: 0px;"
         >
-          <span>
-            test
-          </span>
+          <br />
+          <img
+            class="image"
+            src="~/assets/avatar/default.png"
+          />
            
           <div
-            class="description"
+            style="padding: 0px;"
           >
-            <br />
             <span>
-              hey thats my test
+              test
             </span>
-            <br />
              
-            <br />
+            <div
+              class="description"
+            >
+              <br />
+              <span>
+                hey thats my test
+              </span>
+              <br />
+               
+              <br />
+            </div>
           </div>
+           
+          <footer
+            class="box-footer"
+          >
+            <table>
+              <tr>
+                <td>
+                  10
+                </td>
+                 
+                <td>
+                  2
+                </td>
+                 
+                <td>
+                  3
+                </td>
+              </tr>
+               
+              <tr>
+                <td>
+                  Issues
+                </td>
+                 
+                <td>
+                  Pull Requests
+                </td>
+                 
+                <td>
+                  Commit
+                </td>
+              </tr>
+            </table>
+          </footer>
         </div>
-         
-        <footer
-          class="box-footer"
-        >
-          <table>
-            <tr>
-              <td>
-                10
-              </td>
-               
-              <td>
-                2
-              </td>
-               
-              <td>
-                3
-              </td>
-            </tr>
-             
-            <tr>
-              <td>
-                Issues
-              </td>
-               
-              <td>
-                Pull Requests
-              </td>
-               
-              <td>
-                Commit
-              </td>
-            </tr>
-          </table>
-        </footer>
-      </el-card-stub>
-    </el-col-stub>
-  </el-row-stub>
+      </div>
+    </div>
+  </div>
 </div>
 `;

@@ -1,7 +1,18 @@
+import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
 import ContributorCard from '@/components/organization/ContributorCard.vue'
+import { Col, Row, Card } from 'element-ui'
+
+Vue.use(Col)
+Vue.use(Row)
+Vue.use(Card)
 
 describe('<ContributorCard/>', () => {
+  const $router = {
+    path: '/',
+    replace: () => {}
+  }
+
   const wrapper = shallowMount(ContributorCard, {
     propsData: {
       contributor: {
@@ -13,14 +24,17 @@ describe('<ContributorCard/>', () => {
         totalCommits: 3
       }
     },
+    mocks: {
+      $router
+    },
     stubs: {
-      'el-card': true,
-      'el-row': true,
-      'el-col': true
+      'el-card': Card,
+      'el-row': Col,
+      'el-col': Row
     }
   })
 
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -41,18 +55,23 @@ describe('<ContributorCard/>', () => {
     expect(wrapper.html()).toContain('<img')
   })
 
-  test('should have the labels info (Issues)', () => {
+  it('should have the labels info (Issues)', () => {
     expect(wrapper.html().includes('Issues')).toBe(true)
     expect(wrapper.html().includes('10')).toBe(true)
   })
 
-  test('should have the labels info (Commit)', () => {
+  it('should have the labels info (Commit)', () => {
     expect(wrapper.html().includes('Commit')).toBe(true)
     expect(wrapper.html().includes('3')).toBe(true)
   })
 
-  test('should have the labels info (Pull Requests)', () => {
+  it('should have the labels info (Pull Requests)', () => {
     expect(wrapper.html().includes('Pull Requests')).toBe(true)
     expect(wrapper.html().includes('2')).toBe(true)
+  })
+
+  it('should redirect when card is clicked', () => {
+    wrapper.trigger('click')
+    // expect(window.location.href).toBe('/user/test')
   })
 })

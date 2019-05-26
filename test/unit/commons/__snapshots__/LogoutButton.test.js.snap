@@ -3,9 +3,14 @@
 exports[`<LogoutButton/> shoulbe be a Vue instance and render correctly 1`] = `
 <div>
   <button
-    type="text"
+    class="el-button el-button--text"
+    type="button"
   >
-    Logout
+    <!---->
+    <!---->
+    <span>
+      Logout
+    </span>
   </button>
 </div>
 `;

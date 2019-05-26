@@ -24,9 +24,9 @@ export default {
   data() {
     return {
       counts: [
-        { label: 'Issues', value: this.totalIssues },
-        { label: 'Pull Requests', value: this.totalPullRequests },
-        { label: 'Commits', value: this.totalCommits },
+        { label: 'Issues', value: this.totalIssues || 0 },
+        { label: 'Pull Requests', value: this.totalPullRequests || 0 },
+        { label: 'Commits', value: this.totalCommits || 0 },
       ]
     }
   }

@@ -1,38 +1,33 @@
 import Vue from 'vue'
 import { shallowMount } from '@vue/test-utils'
+import AccountSection from '@/components/navbar/AccountSection.vue'
 import LogoutButton from '@/components/commons/LogoutButton.vue'
+import LoginButton from '@/components/commons/LoginButton.vue'
 import { Button } from 'element-ui'
 
 Vue.use(Button)
 
-describe('<LogoutButton/>', () => {
+describe('<AccountSection/>', () => {
   delete window.location
   window.location = { reload: jest.fn() }
   const onLogout = jest.fn()
-  const wrapper = shallowMount(LogoutButton, {
+  const getToken = jest.fn()
+  const wrapper = shallowMount(AccountSection, {
     mocks: {
       $apolloHelpers: {
-        onLogout
+        onLogout,
+        getToken
       }
     },
     stubs: {
-      'el-button': Button
+      'el-button': Button,
+      'login-button': LoginButton,
+      'logout-button': LogoutButton
     }
   })
 
   it('shoulbe be a Vue instance and render correctly', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('should contain button', () => {
-    expect(wrapper.html()).toContain('Logout')
-    expect(wrapper.html().includes('<button>'))
-  })
-
-  it('should redirect when clicked', () => {
-    const button = wrapper.find('button')
-    button.trigger('click')
-    // expect(onLogout.mock.calls.length).toBe(1)
   })
 })

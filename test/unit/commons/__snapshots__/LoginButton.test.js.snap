@@ -3,7 +3,14 @@
 exports[`LoginButton is a Vue instance 1`] = `
 <div>
   <button
-    type="primary"
-  />
+    class="el-button el-button--primary"
+    type="button"
+  >
+    <!---->
+    <!---->
+    <span>
+      Login
+    </span>
+  </button>
 </div>
 `;

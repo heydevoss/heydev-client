@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrganizationCounts/> should be a Vue instance and renders correctly 1`] = `
+<div
+  class="organization-counts"
+>
+  <div
+    class="org-count"
+  >
+    <div
+      class="org-count--item"
+    >
+      <span
+        class="value"
+      >
+        
+        4
+      
+      </span>
+       
+      <span
+        class="label"
+      >
+        
+        Issues
+      
+      </span>
+    </div>
+  </div>
+  <div
+    class="org-count"
+  >
+    <div
+      class="org-count--item"
+    >
+      <span
+        class="value"
+      >
+        
+        13
+      
+      </span>
+       
+      <span
+        class="label"
+      >
+        
+        Pull Requests
+      
+      </span>
+    </div>
+  </div>
+  <div
+    class="org-count"
+  >
+    <div
+      class="org-count--item"
+    >
+      <span
+        class="value"
+      >
+        
+        2
+      
+      </span>
+       
+      <span
+        class="label"
+      >
+        
+        Commits
+      
+      </span>
+    </div>
+  </div>
+</div>
+`;
