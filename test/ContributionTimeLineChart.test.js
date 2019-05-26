@@ -8,7 +8,11 @@ describe('ContributionTimeLineChart', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  it('renders the table ', () => {
+  it('renders the chartjs-line', () => {
     expect(wrapper.html()).toContain('<chartjs-line')
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
   })
 })

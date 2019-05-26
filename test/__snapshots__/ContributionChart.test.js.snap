@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContributionChart renders correctly 1`] = `
+<vue-no-ssr>
+  <div>
+    <br />
+     
+    <chartjs-doughnut
+      bind="true"
+      class="chart"
+      datasets="[object Object]"
+      labels="Pull Requests Open,Pull Requests Closed,Issues Open,Issues Closed,Commits"
+      option="[object Object]"
+    />
+  </div>
+</vue-no-ssr>
+`;

@@ -8,7 +8,11 @@ describe('ContributionChart', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  it('renders the table ', () => {
+  it('renders the chartjs-doughnut ', () => {
     expect(wrapper.html()).toContain('<chartjs-doughnut')
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
   })
 })
