@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginButton should be a Vue instance and render correctly 1`] = `
+exports[`<Avatar/> should be a Vue instance and render correctly 1`] = `
 <img
   src=""
 />

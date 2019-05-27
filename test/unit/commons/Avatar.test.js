@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import Avatar from '@/components/commons/Avatar.vue'
 
-describe('LoginButton', () => {
+describe('<Avatar/>', () => {
   const wrapper = shallowMount(Avatar)
 
   it('should be a Vue instance and render correctly', () => {
