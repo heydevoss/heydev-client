@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setted primary Color to `#2a5fe1`.
 - Header containing `Home` option.
 - User page containing User info and user stats.
+- Org pull requests, issues and commits.
+- Unit tests for all components.
 
 ### Fixed
 
@@ -35,7 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Nuxt project structure and configured Travis.
 - Contributor views.
 - Contributor activities timeline
-
 
 ### Fixed
 

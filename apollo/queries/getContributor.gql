@@ -1,4 +1,4 @@
-query  getContributor($login: String!){ 
+query getContributor($login: String!){ 
   organization{
     totalIssues
     totalPullRequests

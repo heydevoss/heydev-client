@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContributorActivity/> Component should be a Vue instance and render correctly 1`] = `
+<div
+  class="block"
+>
+  <br />
+  <ul
+    class="el-timeline"
+  >
+    <li
+      class="el-timeline-item"
+    >
+      <div
+        class="el-timeline-item__tail"
+      />
+      <div
+        class="el-timeline-item__node el-timeline-item__node--large el-timeline-item__node--primary"
+        style="background-color: grey;"
+      >
+        <i
+          class="el-timeline-item__icon el-icon-s-promotion"
+        />
+      </div>
+      <!---->
+      <div
+        class="el-timeline-item__wrapper"
+      >
+        <!---->
+        <div
+          class="el-timeline-item__content"
+        >
+          
+      New Pull Request on Tamburetei
+    
+        </div>
+        <div
+          class="el-timeline-item__timestamp is-bottom"
+        >
+          
+      2019-06-12 20:46
+    
+        </div>
+      </div>
+    </li>
+    <li
+      class="el-timeline-item"
+    >
+      <div
+        class="el-timeline-item__tail"
+      />
+      <div
+        class="el-timeline-item__node el-timeline-item__node--large el-timeline-item__node--"
+        style="background-color: grey;"
+      >
+        <i
+          class="el-timeline-item__icon el-icon-more"
+        />
+      </div>
+      <!---->
+      <div
+        class="el-timeline-item__wrapper"
+      >
+        <!---->
+        <div
+          class="el-timeline-item__content"
+        >
+          
+      Commented on IssueAi #48 issue
+    
+        </div>
+        <div
+          class="el-timeline-item__timestamp is-bottom"
+        >
+          
+      2019-06-12 16:05
+    
+        </div>
+      </div>
+    </li>
+    <li
+      class="el-timeline-item"
+    >
+      <div
+        class="el-timeline-item__tail"
+      />
+      <div
+        class="el-timeline-item__node el-timeline-item__node--large el-timeline-item__node--"
+        style="background-color: grey;"
+      >
+        <i
+          class="el-timeline-item__icon el-icon-star-on"
+        />
+      </div>
+      <!---->
+      <div
+        class="el-timeline-item__wrapper"
+      >
+        <!---->
+        <div
+          class="el-timeline-item__content"
+        >
+          
+      Star in Roadmap
+    
+        </div>
+        <div
+          class="el-timeline-item__timestamp is-bottom"
+        >
+          
+      2019-06-11 13:56
+    
+        </div>
+      </div>
+    </li>
+    <li
+      class="el-timeline-item"
+    >
+      <div
+        class="el-timeline-item__tail"
+      />
+      <div
+        class="el-timeline-item__node el-timeline-item__node--large el-timeline-item__node--"
+        style="background-color: grey;"
+      >
+        <i
+          class="el-timeline-item__icon el-icon-circle-plus-outline"
+        />
+      </div>
+      <!---->
+      <div
+        class="el-timeline-item__wrapper"
+      >
+        <!---->
+        <div
+          class="el-timeline-item__content"
+        >
+          
+      Commit on IssueAi
+    
+        </div>
+        <div
+          class="el-timeline-item__timestamp is-bottom"
+        >
+          
+      2019-06-10 19:36
+    
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

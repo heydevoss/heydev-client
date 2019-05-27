@@ -3,19 +3,19 @@
     <div v-if="!$apollo.queries.organization.loading" class="content">
       <div class="header">
         <user-info
-          :name="this.organization.contributor.name"
-          :bio="this.organization.contributor.bio"
-          :location="this.organization.contributor.location"
-          :avatar-url="this.organization.contributor.avatarUrl"
+          :name="organization.contributor.name"
+          :bio="organization.contributor.bio"
+          :location="organization.contributor.location"
+          :avatar-url="organization.contributor.avatarUrl"
           class="user-info"
         />
         <el-divider direction="vertical" class="divider" />
         <user-stats
-          :total-pull-requests="this.organization.contributor.totalPullRequests"
-          :total-commits="this.organization.contributor.totalCommits"
-          :total-issues="this.organization.contributor.totalIssues"
+          :total-pull-requests="organization.contributor.totalPullRequests"
+          :total-commits="organization.contributor.totalCommits"
+          :total-issues="organization.contributor.totalIssues"
           :first-contribution-date="
-            this.organization.contributor.firstContributionDate
+            organization.contributor.firstContributionDate
           "
           class="user-stats"
         />
@@ -26,34 +26,31 @@
       <div class="charts">
         <contribution-chart
           class="chart"
-          :open-pr-contributor="
-            this.organization.contributor.totalPullRequestsOpen
-          "
+          :open-pr-contributor="organization.contributor.totalPullRequestsOpen"
           :closed-pr-contributor="
-            this.organization.contributor.totalPullRequestsClosed
+            organization.contributor.totalPullRequestsClosed
           "
-          :open-issues-contributor="
-            this.organization.contributor.totalIssuesOpen
-          "
+          :open-issues-contributor="organization.contributor.totalIssuesOpen"
           :closed-issues-contributor="
-            this.organization.contributor.totalIssuesClosed
+            organization.contributor.totalIssuesClosed
           "
-          :commits-contributor="this.organization.contributor.totalCommits"
+          :commits-contributor="organization.contributor.totalCommits"
         />
 
         <CompareChart
           class="chart"
-          :pr-contributor="this.organization.contributor.totalPullRequests"
-          :issues-contributor="this.organization.contributor.totalIssues"
-          :commits-contributor="this.organization.contributor.totalCommits"
-          :pr-organization="this.organization.totalPullRequests"
-          :issues-organization="this.organization.totalIssues"
-          :commits-organization="this.organization.totalCommits"
+          :pr-contributor="organization.contributor.totalPullRequests"
+          :issues-contributor="organization.contributor.totalIssues"
+          :commits-contributor="organization.contributor.totalCommits"
+          :pr-organization="organization.totalPullRequests"
+          :issues-organization="organization.totalIssues"
+          :commits-organization="organization.totalCommits"
         />
         <ContributionTimeLineChart />
       </div>
-      <contributor-timeline />
+      <contributor-activity />
     </div>
+    <contributor-timeline />
   </div>
 </template>
 <script>
@@ -63,7 +60,7 @@ import ContributionChart from '@/components/user/ContributionChart'
 import CompareChart from '@/components/user/CompareChart'
 import ContributionTimeLineChart from '@/components/user/ContributionTimeLineChart'
 import getContributor from '@/apollo/queries/getContributor.gql'
-import ContributorTimeline from '@/components/user/ContributorTimeline'
+import ContributorActivity from '@/components/user/ContributorActivity'
 
 export default {
   name: 'User',
@@ -73,7 +70,7 @@ export default {
     ContributionChart,
     CompareChart,
     ContributionTimeLineChart,
-    ContributorTimeline
+    ContributorActivity
   },
 
   data() {

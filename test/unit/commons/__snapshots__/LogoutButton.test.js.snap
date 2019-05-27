@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LogoutButton/> shoulbe be a Vue instance and render correctly 1`] = `
+<div>
+  <button
+    class="el-button el-button--text"
+    type="button"
+  >
+    <!---->
+    <!---->
+    <span>
+      Logout
+    </span>
+  </button>
+</div>
+`;

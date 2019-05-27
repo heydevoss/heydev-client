@@ -18,6 +18,7 @@
 
 <script>
 export default {
+  name: 'ContributorActivity',
   data() {
     return {
       activities: [

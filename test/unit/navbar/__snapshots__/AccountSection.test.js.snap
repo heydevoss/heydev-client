@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountSection/> shoulbe be a Vue instance and render correctly 1`] = `
+<div>
+  <div>
+    <button
+      class="el-button el-button--primary"
+      type="button"
+    >
+      <!---->
+      <!---->
+      <span>
+        Login
+      </span>
+    </button>
+  </div>
+</div>
+`;

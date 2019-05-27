@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button type="primary" plain @click="onLogout">Logout</el-button>
+    <el-button type="text" @click="onLogout">Logout</el-button>
   </div>
 </template>
 

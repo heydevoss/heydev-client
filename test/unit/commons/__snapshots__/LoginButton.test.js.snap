@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginButton is a Vue instance 1`] = `
+<div>
+  <button
+    class="el-button el-button--primary"
+    type="button"
+  >
+    <!---->
+    <!---->
+    <span>
+      Login
+    </span>
+  </button>
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<UserStats/> Component renders correctly 1`] = `
+exports[`<UserStats/> Component should be a Vue instance and renders correctly 1`] = `
 <div
   class="content"
 >
@@ -19,7 +19,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      
+      5
     
     </span>
   </div>
@@ -38,7 +38,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      
+      21
     
     </span>
   </div>
@@ -57,7 +57,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      
+      34
     
     </span>
   </div>
@@ -76,7 +76,7 @@ exports[`<UserStats/> Component renders correctly 1`] = `
       class="count"
     >
       
-      
+      2018-04-04
     
     </span>
   </div>

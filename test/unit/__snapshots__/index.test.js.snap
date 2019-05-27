@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Index/> Page should be a Vue instance and renders correctly 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="info"
+  >
+    <img
+      class="org--avatar"
+      src="@/assets/avatar/default.png"
+    />
+     
+    <div>
+      <span
+        class="org--name"
+      >
+        Test
+      </span>
+       
+      <button
+        class="org-info--github"
+      />
+       
+      <div
+        class="organization-counts org-info--counts"
+      >
+        <div
+          class="org-count"
+        >
+          <div
+            class="org-count--item"
+          >
+            <span
+              class="value"
+            >
+              
+        1000
+      
+            </span>
+             
+            <span
+              class="label"
+            >
+              
+        Issues
+      
+            </span>
+          </div>
+        </div>
+        <div
+          class="org-count"
+        >
+          <div
+            class="org-count--item"
+          >
+            <span
+              class="value"
+            >
+              
+        50
+      
+            </span>
+             
+            <span
+              class="label"
+            >
+              
+        Pull Requests
+      
+            </span>
+          </div>
+        </div>
+        <div
+          class="org-count"
+        >
+          <div
+            class="org-count--item"
+          >
+            <span
+              class="value"
+            >
+              
+        200
+      
+            </span>
+             
+            <span
+              class="label"
+            >
+              
+        Commits
+      
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <section
+    class="contributors"
+  >
+    <span
+      class="section--title"
+    >
+      Contributors
+    </span>
+     
+    <div>
+      <apolloquery-stub
+        query="[object Object]"
+        variables="[object Object]"
+      />
+       
+      <button
+        class="el-button button--show-more el-button--default"
+        type="button"
+      >
+        <!---->
+        <!---->
+        <span>
+          Show more
+        </span>
+      </button>
+    </div>
+  </section>
+   
+  <section
+    class="repositories"
+  >
+    <span
+      class="section--title"
+    >
+      Repositories
+    </span>
+     
+    <div>
+      <apolloquery-stub
+        query="[object Object]"
+        variables="[object Object]"
+      />
+       
+      <button
+        class="el-button button--show-more el-button--default"
+        type="button"
+      >
+        <!---->
+        <!---->
+        <span>
+          Show more
+        </span>
+      </button>
+    </div>
+  </section>
+</div>
+`;

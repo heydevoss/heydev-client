@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepositoryCard/> should be a Vue instance and renders correctly 1`] = `
+<div
+  class="card"
+>
+  <el-card-stub
+    shadow="hover"
+  >
+    <div
+      class="card--header"
+    >
+      <span
+        class="repository--name"
+      >
+        MyTestRepository
+      </span>
+    </div>
+     
+    <div
+      class="repository--counters"
+    >
+      <i
+        class="el-icon-star-on"
+      >
+        20
+      </i>
+       
+      <i
+        class="el-icon-warning"
+      >
+        3
+      </i>
+       
+      <img
+        height="15px"
+        src="/fork.png"
+        width="15px"
+      />
+      
+      10
+    
+    </div>
+  </el-card-stub>
+</div>
+`;
