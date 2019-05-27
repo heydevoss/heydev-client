@@ -37,7 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Nuxt project structure and configured Travis.
 - Contributor views.
 - Contributor activities timeline
+<<<<<<< HEAD
 
+=======
+>>>>>>> Rename, CHANGELOG and fix datas on timeline
 
 ### Fixed
 
