@@ -1,10 +1,12 @@
 <template>
   <div>
     <LoginButton v-if="!isAuthenticated" />
-    <div class="logged-user" v-else>
-      <avatar @click="redirectToUser" class="avatar"/>
-      <span @click="redirectToUser" class="user--name">{{me.name || me.login}}</span>
-      <LogoutButton class="logout"/>
+    <div v-else class="logged-user">
+      <avatar class="avatar" @click="redirectToUser" />
+      <span class="user--name" @click="redirectToUser">{{
+        me.name || me.login
+      }}</span>
+      <LogoutButton class="logout" />
     </div>
   </div>
 </template>
@@ -21,14 +23,14 @@ export default {
     LogoutButton,
     Avatar
   },
-  methods: {
-    redirectToUser() {
-      this.$router.replace(`/user/${this.me.login}`)
-    }
-  },
   computed: {
     isAuthenticated() {
       return !!this.$apolloHelpers.getToken()
+    }
+  },
+  methods: {
+    redirectToUser() {
+      this.$router.replace(`/user/${this.me.login}`)
     }
   },
   apollo: {
@@ -66,5 +68,4 @@ export default {
     margin-left: 0;
   }
 }
-
 </style>

@@ -4,12 +4,12 @@
       <Avatar :avatar-url="organization.avatarUrl" class="org--avatar" />
       <div>
         <span class="org--name">{{ organization.name }}</span>
-         <button @click="redirectToOrgSite" class="org-info--github"/>
-      <organization-counts 
-        :totalPullRequests="organization.totalPullRequests"
-        :totalIssues="organization.totalIssues"
-        :totalCommits="organization.totalCommits"
-        class="org-info--counts"
+        <button class="org-info--github" @click="redirectToOrgSite" />
+        <organization-counts
+          :total-pull-requests="organization.totalPullRequests"
+          :total-issues="organization.totalIssues"
+          :total-commits="organization.totalCommits"
+          class="org-info--counts"
         />
       </div>
     </div>
@@ -29,7 +29,6 @@ import ContributorsList from '@/components/organization/ContributorsList'
 import RepositoriesList from '@/components/organization/RepositoriesList'
 import OrganizationCounts from '@/components/organization/OrganizationCounts'
 import getOrganization from '@/apollo/queries/getOrganization.gql'
-
 import Avatar from '@/components/commons/Avatar'
 
 export default {
@@ -40,14 +39,14 @@ export default {
     RepositoriesList,
     OrganizationCounts
   },
-  methods: {
-    redirectToOrgSite () {
-      window.location = `https://github.com/${this.organization.login}`
-    }
-  },
   data() {
     return {
       organization: {}
+    }
+  },
+  methods: {
+    redirectToOrgSite() {
+      window.location = `https://github.com/${this.organization.login}`
     }
   },
   apollo: {

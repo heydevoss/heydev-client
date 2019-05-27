@@ -19,14 +19,14 @@ export default {
   props: {
     totalPullRequests: Number,
     totalCommits: Number,
-    totalIssues: Number,
+    totalIssues: Number
   },
   data() {
     return {
       counts: [
         { label: 'Issues', value: this.totalIssues || 0 },
         { label: 'Pull Requests', value: this.totalPullRequests || 0 },
-        { label: 'Commits', value: this.totalCommits || 0 },
+        { label: 'Commits', value: this.totalCommits || 0 }
       ]
     }
   }
@@ -49,8 +49,8 @@ export default {
 }
 
 .value {
-  font-size: calc(2.0em + 1vw);
-  color: #FFA600;
+  font-size: calc(2em + 1vw);
+  color: #ffa600;
 }
 
 .label {
@@ -62,7 +62,7 @@ export default {
   .organization-counts {
     flex-direction: column;
     justify-content: space-between;
-  }  
+  }
   .label {
     font-size: calc(1em + 1vw);
   }

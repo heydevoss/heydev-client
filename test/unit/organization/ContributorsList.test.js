@@ -39,6 +39,11 @@ describe('<ContributorsList/>', () => {
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('should contain button', () => {
+    expect(wrapper.contains(Button)).toBe(true)
+  })
+
   it('should increase quantity of contributors when button is clicked', () => {
     expect(wrapper.vm.quantity).toBe(6)
     const button = wrapper.find('button')

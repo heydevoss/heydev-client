@@ -54,6 +54,5 @@ describe('<AccountSection/>', () => {
     loginButton.trigger('click')
   })
 
-  it('should contain <LogoutButton/> when user is logged', () => {
-  })
+  it('should contain <LogoutButton/> when user is logged', () => {})
 })

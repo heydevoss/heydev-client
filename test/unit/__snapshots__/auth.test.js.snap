@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Auth/> Page should be a Vue instance and renders correctly 1`] = `<div />`;
