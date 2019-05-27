@@ -16,11 +16,11 @@
 <script>
 export default {
   props: {
-    openPrContributor: Number,
-    closedPrContributor: Number,
-    openIssuesContributor: Number,
-    closedIssuesContributor: Number,
-    commitsContributor: Number
+    openPrContributor: { type: Number, default: 0 },
+    closedPrContributor: { type: Number, default: 0 },
+    openIssuesContributor: { type: Number, default: 0 },
+    closedIssuesContributor: { type: Number, default: 0 },
+    commitsContributor: { type: Number, default: 0 }
   },
   data() {
     return {

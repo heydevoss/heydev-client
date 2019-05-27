@@ -18,7 +18,7 @@
 export default {
   name: 'Repository',
   props: {
-    repository: Object
+    repository: { default: null, type: Object }
   }
 }
 </script>

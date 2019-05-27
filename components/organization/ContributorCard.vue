@@ -37,7 +37,7 @@
 export default {
   name: 'ContributorCard',
   props: {
-    contributor: Object
+    contributor: { default: null, type: Object }
   },
   methods: {
     redirectToUserPage() {

@@ -17,9 +17,9 @@
 export default {
   name: 'OrganizationCounts',
   props: {
-    totalPullRequests: Number,
-    totalCommits: Number,
-    totalIssues: Number
+    totalPullRequests: { default: 0, type: Number },
+    totalCommits: { default: 0, type: Number },
+    totalIssues: { default: 0, type: Number }
   },
   data() {
     return {

@@ -17,12 +17,12 @@
 <script>
 export default {
   props: {
-    prContributor: Number,
-    issuesContributor: Number,
-    commitsContributor: Number,
-    prOrganization: Number,
-    issuesOrganization: Number,
-    commitsOrganization: Number
+    prContributor: { type: Number, default: 0 },
+    issuesContributor: { type: Number, default: 0 },
+    commitsContributor: { type: Number, default: 0 },
+    prOrganization: { type: Number, default: 0 },
+    issuesOrganization: { type: Number, default: 0 },
+    commitsOrganization: { type: Number, default: 0 }
   },
   data() {
     return {
