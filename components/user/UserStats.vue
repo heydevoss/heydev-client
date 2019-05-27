@@ -15,10 +15,10 @@ export default {
   name: 'UserStats',
   components: {},
   props: {
-    totalPullRequests: Number,
-    totalCommits: Number,
-    totalIssues: Number,
-    firstContributionDate: String
+    totalPullRequests: { type: Number, default: 0 },
+    totalCommits: { type: Number, default: 0 },
+    totalIssues: { type: Number, default: 0 },
+    firstContributionDate: { type: String, default: '' }
   },
   data() {
     return {

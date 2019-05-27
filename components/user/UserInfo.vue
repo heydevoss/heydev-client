@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <avatar :avatar-url="this.avatarUrl" class="user--avatar" />
+    <avatar :avatar-url="avatarUrl" class="user--avatar" />
     <div class="user--info">
-      <span class="user--name">{{ this.name }}</span>
-      <span>{{ this.bio }}</span>
+      <span class="user--name">{{ name }}</span>
+      <span>{{ bio }}</span>
       <span class="user--location">
-        <i class="el-icon-location" /> {{ this.location }}
+        <i class="el-icon-location" /> {{ location }}
       </span>
     </div>
   </div>
@@ -19,7 +19,12 @@ export default {
   components: {
     Avatar
   },
-  props: { name: String, bio: String, location: String, avatarUrl: String }
+  props: {
+    name: { type: String, default: '' },
+    bio: { type: String, default: '' },
+    location: { type: String, default: '' },
+    avatarUrl: { type: String, default: '' }
+  }
 }
 </script>
 
