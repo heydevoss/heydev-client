@@ -2,7 +2,7 @@
   <div>
     <LoginButton v-if="!isAuthenticated" />
     <div v-else class="logged-user">
-      <avatar class="avatar" @click="redirectToUser" />
+      <avatar class="avatar" :avatarUrl="me.avatarUrl" @click="redirectToUser" />
       <span class="user--name" @click="redirectToUser">{{
         me.name || me.login
       }}</span>
