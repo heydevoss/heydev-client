@@ -45,6 +45,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
+.user--name:hover{
+  cursor: pointer;
+}
 .avatar {
   width: 40px;
   height: 40px;
