@@ -3,5 +3,6 @@
     login
     id
     name
+    avatarUrl
   }
 }

@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - User page containing User info and user stats.
 - Org pull requests, issues and commits.
 - Unit tests for all components.
+- Avatar of logged user in navbar.
 
 ### Fixed
 
