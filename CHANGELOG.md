@@ -16,11 +16,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Org pull requests, issues and commits.
 - Unit tests for all components.
 - Avatar of logged user in navbar.
+- Redirect to user page when logged.
 
 ### Fixed
 
 - Avatar throws error when image is not provided. Setted a default image in `assets/`
 - Organization query with wrong sintax.
+- Avatat not clickable in the navbar.
 
 ### Changed
 

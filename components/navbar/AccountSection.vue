@@ -2,14 +2,10 @@
   <div>
     <LoginButton v-if="!isAuthenticated" />
     <div v-else class="logged-user">
-      <avatar
-        class="avatar"
-        :avatar-url="me.avatarUrl"
-        @click="redirectToUser"
-      />
-      <span class="user--name" @click="redirectToUser">{{
-        me.name || me.login
-      }}</span>
+      <div class="user-infos" @click="redirectToUser">
+        <avatar class="avatar" :avatar-url="me.avatarUrl" />
+        <span class="user--name">{{ me.name || me.login }}</span>
+      </div>
       <LogoutButton class="logout" />
     </div>
   </div>
@@ -48,17 +44,21 @@ export default {
 .user--name:hover {
   cursor: pointer;
 }
+
 .avatar {
   width: 40px;
   height: 40px;
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
 }
 .logged-user {
   display: flex;
   flex-direction: row;
+}
+.user-infos {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-right: 5px;
 }
 .logout {
   margin-left: 10px;
