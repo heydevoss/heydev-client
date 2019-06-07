@@ -9,6 +9,11 @@ describe('<Auth/> Page', () => {
   }
   const onLogin = jest.fn()
   const wrapper = shallowMount(Auth, {
+    data: () => ({
+      me: {
+        login: 'test'
+      }
+    }),
     mocks: {
       $route,
       $apolloHelpers: {
