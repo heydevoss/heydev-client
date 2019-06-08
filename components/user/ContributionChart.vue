@@ -50,10 +50,10 @@ export default {
         }
       ],
       labels: [
-        'Pull Requests Open',
-        'Pull Requests Closed',
-        'Issues Open',
-        'Issues Closed',
+        'Opened Pull Requests',
+        'Closed Pull Requests',
+        'Opened Issues',
+        'Closed Issues',
         'Commits'
       ],
       options: {
