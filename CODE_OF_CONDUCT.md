@@ -1,4 +1,4 @@
-# Code of conduct
+# Código de conduta
 
 O coração de uma comunidade são as pessoas. Nosso projeto se preocupa em receber contribuições de diferentes backgrounds, de todos aqueles que estão alinhados com nossos valores e interessados em promover a diversidade e inclusão. Pois queremos um time mais engajado, colaborativo e inovador.
 
