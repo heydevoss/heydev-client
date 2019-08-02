@@ -36,11 +36,15 @@ Tente limitar o escopo das discussões, apenas ao tópico em questão, especialm
 
 ## Reponsalidade dos maintaners
 
+Os maintaners são responsáveis por deixar claro, padrões e comportamentos aceitos pela comunidade e tomar as devidas ações caso alguma dessas diretrizes sejam feridas.
+
+Eles podem remover, editar, rejeitar comentários, código, edições de wiki, issues e outras contriuições que não estão alinhadas com esse código de conduta, ou até banir temporariamente ou permanentemente qualquer contribuidor por comportamentos inapropridos, ameaçadores, ofensivos ou prejudiciais.
+
 ## Inspirações
 
-O documento foi inspirado nos seguintes materiais:
+O documento foi inspirado nos seguintes materiais:  
 
-[Apache Code of Conduct](http://www.apache.org/foundation/policies/conduct)
-[Mozilla Code of Conduct](https://www.mozilla.org/pt-BR/about/governance/policies/participation/)
-[Firefox Dev Tools Code of Conduct](https://github.com/firefox-devtools/debugger/blob/master/CODE_OF_CONDUCT.md)
+[Apache Code of Conduct](http://www.apache.org/foundation/policies/conduct)  
+[Mozilla Code of Conduct](https://www.mozilla.org/pt-BR/about/governance/policies/participation/)  
+[Firefox Dev Tools Code of Conduct](https://github.com/firefox-devtools/debugger/blob/master/CODE_OF_CONDUCT.md)  
 
