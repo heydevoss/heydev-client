@@ -1,50 +1,52 @@
-# Código de conduta
+# CODE OF CONDUCT
 
-O coração de uma comunidade são as pessoas. Nosso projeto se preocupa em receber contribuições de diferentes backgrounds, de todos aqueles que estão alinhados com nossos valores e interessados em promover a diversidade e inclusão. Pois queremos um time mais engajado, colaborativo e inovador.
+[*Brazilian Portuguese version*](/CODE_OF_CONDUCT_PTBR.md)
 
-Assim, utilizamos esse código de conduta, e esperamos que seja seguido por todos aqueles que participam da comunidade **heydev** direta ou indiretamente.
+The heart of a community is the people. Our project is concerned with receiving contributions from different backgrounds, from those who are aligned with our values and interested in promoting diversity and inclusion. We want a more engaged, collaborative and innovative team.
 
-## Comportamentos Esperados
+Thus, we use this code of conduct, and expect it to be followed by all those who participate in the ** heydev ** community directly or indirectly.
 
-**Seja transparente** Nós apreciamos o interesse daqueles que desejam participar da nossa comunidade, e preferimos que sejam usados métodos públicos de comunicação, como por exemplo discussões fomentadas pela abertura de issues, a menos que o assunto a ser discutido seja sensível. Isso se aplica a pedidos de ajuda, ou de suporte relacionado ao projeto. Fazemos isso, de modo a garantir que os problemas de comunicação sejam facilmente detectados e corrigidos.
+## Expected Behaviour
 
-**Seja empático, amigável, receptivo e  paciente** O nosso trabalho é feito de modo coletivo, assumimos que todos tem boas itenções e fazemos o nosso melhor para tratarmos nossos colegas com empatia. Mas de tempos em tempos, lidar com pessoas pode ser uma experiência frustrante, nós não permitimos que essa frustração, se torne um ataque pessoal. Comunidades em que as pessoas se sentem desconfortaveis ou destratadas são improdutivas. Esperamos que todos os membros respeitem uns aos outros, bem como a todos os participantes da comunidade.
+**Be open.** We invite anyone to participate in our community. We preferably use public methods of communication for project-related messages, unless discussing something sensitive. This applies to messages for help or project-related support, too; not only is a public support request much more likely to result in an answer to a question, it also makes sure that any inadvertent mistakes made by people answering will be more easily detected and corrected.
 
-**Seja colaborativo** Nos preocupamos com aquilo que desenvolvemos, pois além do nosso trabalho ser usado por outras pessoas, dependemos, por vezes, do trabalho delas para concluir o nosso. Ao desenvolvermos uma solução para o projeto, estamos dispostos a explicar como ela funciona a todos que se interessarem, para que elas possam desenvolver o trabalho e torná-lo ainda melhor. E sempre que tomamos uma decisão, levamos em consideração, como nosso trabalho poderá afetar nossos colegas.
+**Be empathetic, welcoming, friendly, and patient.** We work together to resolve conflict, assume good intentions, and do our best to act in an empathetic fashion. We may all experience some frustration from time to time, but we do not allow frustration to turn into a personal attack. A community where people feel uncomfortable or threatened is not a productive one. We should be respectful when dealing with other community members as well as with people outside our community.
 
-**Seja inquisitivo** Ninguém sabe de tudo. Fazer perguntas, ajuda a evitar problemas no futuro, aqui no **heydev** perguntas são encorajadas, os responsáveis por respoderem devem ser prestativos e responsivos.
+**Be collaborative.** Our work will be used by other people, and in turn we will depend on the work of others. When we make something for the benefit of the project, we are willing to explain to others how it works, so that they can build on the work to make it even better. Any decision we make will affect users and colleagues, and we take those consequences seriously when making decisions.
 
-**Seja cuidadoso com as palavras** Apreciamos o respeito nas nossas interações e nos reponsailizamos pelo nosso discurso. Seja gentil com os outros, não insulte ou coloque pra baixo outros participantes. Além disso, evite:
+**Be inquisitive.** Nobody knows everything! Asking questions early avoids many problems later, so questions are encouraged, though they may be directed to the appropriate forum. Those who are asked should be responsive and helpful, within the context of our shared goal of improving Apache project code.
 
-- Ameaças violentas ou linguagem dirigida contra outra pessoa.
-- Piadas e linguagem sexistas, racistas ou discriminatórias.
-- Postar material sexualmente explícito ou violento.
-- Postar (ou ameaçar postar) informações de identificação pessoal de outras pessoas ("doxing").
-- Compartilhamento de conteúdo privado, como e-mails enviados de maneira privada ou não pública.
-- Insultos pessoais, especialmente aqueles que usam termos racistas ou sexistas.
-- Atenção sexual indesejada.
-- Profanidade excessiva ou desnecessária.
-- Assédio repetido de outros. Em geral, se alguém lhe pedir para parar, pare.
+**Be careful in the words that we choose.** Whether we are participating as professionals or volunteers, we value professionalism in all interactions, and take responsibility for our own speech. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behaviour are not acceptable. This includes, but is not limited to:
 
-**Seja conciso** Ao discutir um tópico, tente escrever um texto curto, assim as outras pessoas entenderão a discussão de forma mais eficiente. Se uma explicação longa for necessária, adicione um resumo.
+- Violent threats or language directed against another person.
+- Sexist, racist, or otherwise discriminatory jokes and language.
+- Posting sexually explicit or violent material.
+- Posting (or threatening to post) other people's personally identifying information ("doxing").
+- Sharing private content, such as emails sent privately or non-publicly, or unlogged forums such as IRC channel history.
+- Personal insults, especially those using racist or sexist terms.
+- Unwelcome sexual attention.
+- Excessive or unnecessary profanity.
+- Repeated harassment of others. In general, if someone asks you to stop, then stop.
+- Advocating for, or encouraging, any of the above behaviour.
 
-A cada nova resposta da discussão, tente agregar algo exclusivo, se você apenas concorda com uma afirmação, considere reagir com um emoji, isso facilita o controle do tamanho da thread.
+**Be concise.** Keep in mind that what you write once will be read by hundreds of persons. Writing a short email means people can understand the conversation as efficiently as possible. Short emails should always strive to be empathetic, welcoming, friendly and patient. When a long explanation is necessary, consider adding a summary.
 
-Tente limitar o escopo das discussões, apenas ao tópico em questão, especialmente em discussões que já tem um tamanho considerável.
+Try to bring new ideas to a conversation so that each mail adds something unique to the thread, keeping in mind that the rest of the thread still contains the other messages with arguments that have already been made.
 
-**Seja profissional** Membros de todos os projetos vêm e vão. Quando alguém sai ou se desconecta do projeto, às pessoas que estão saindo devem tomar as medidas adequadas para garantir que os outros possam continuar de onde pararam. Ao fazer isso, eles devem permanecer respeitosos com aqueles que continuam a participar do projeto e não devem deturpar as metas ou conquistas do projeto. Da mesma forma, os membros da comunidade devem respeitar a escolha de qualquer indivíduo para deixar o projeto.
+Try to stay on topic, especially in discussions that are already fairly large.
 
-## Reponsalidade dos maintaners
+**Step down considerately.** Members of every project come and go. When somebody leaves or disengages from the project they should tell people they are leaving and take the proper steps to ensure that others can pick up where they left off. In doing so, they should remain respectful of those who continue to participate in the project and should not misrepresent the project's goals or achievements. Likewise, community members should respect any individual's choice to leave the project.
 
-Os maintaners são responsáveis por deixar claro, padrões e comportamentos aceitos pela comunidade e tomar as devidas ações caso alguma dessas diretrizes sejam feridas.
+## Our Responsibilities
 
-Eles podem remover, editar, rejeitar comentários, código, edições de wiki, issues e outras contriuições que não estão alinhadas com esse código de conduta, ou até banir temporariamente ou permanentemente qualquer contribuidor por comportamentos inapropridos, ameaçadores, ofensivos ou prejudiciais.
+The maintaners are responsible for making clear, community accepted standards and behaviors and taking appropriate action if any of these guidelines are injured.
 
-## Inspirações
+They may remove, edit, reject comments, code, wiki edits, issues, and other contributions that are not in line with this code of conduct, or even temporarily or permanently ban any contributor for inappropriate, threatening, offensive, or harmful behavior.
 
-O documento foi inspirado nos seguintes materiais:  
+## Inspirations
+
+This statement thanks the following, on which it draws for content and inspiration:
 
 [Apache Code of Conduct](http://www.apache.org/foundation/policies/conduct)  
 [Mozilla Code of Conduct](https://www.mozilla.org/pt-BR/about/governance/policies/participation/)  
-[Firefox Dev Tools Code of Conduct](https://github.com/firefox-devtools/debugger/blob/master/CODE_OF_CONDUCT.md)  
-
+[Firefox Dev Tools Code of Conduct](https://github.com/firefox-devtools/debugger/blob/master/CODE_OF_CONDUCT.md)
